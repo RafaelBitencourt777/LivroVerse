@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 30px;
+    height: 135px;
+
+    .Cabecalho > img {
+        width: 401px;
+        height: 54px;
+    }
+
+    .barrapesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 100px;
+        position: relative;
+    }
+
+    .barrapesquisa > img {
+        position: absolute;
+        width: 45px;
+        height: 32px;
+        left: 10px;
+    }
+
+    .barrapesquisa > input {
+        width: 561px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #c2c2c2;
+        border: none;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+    }
+
+    .trilogia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .trilogia > img {
+        margin-left: 30px;
+        width: 54px;
+        height: 54px;
+    }
+}

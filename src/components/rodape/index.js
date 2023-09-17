@@ -45,7 +45,9 @@ export default function Rodape() {
                 </div>
                 </div>
 
-                <h8 class="baixo">Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</h8>
+            </div>
+            <div className="baixo">
+                <h8>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</h8>
             </div>
         </div>  
     );
