@@ -14,17 +14,17 @@ export default function Rodape() {
                 <div class="esquerda">
                     <h3>REDES SOCIAIS:</h3>
 
-                    <div class="insta">
+                    <div class="rs">
                         <img src={insta} alt="" />
                         <p>Instagram: @livroverseoficial</p>
                     </div>
 
-                    <div class="face">
+                    <div class="rs">
                         <img src={face} alt="" />
                         <p>Facebook: LivroVerse</p>
                     </div>
 
-                    <div class="ttk">
+                    <div class="rs">
                         <img src={ttk} alt="" />
                         <p>TikTok: LivroVerseOfc</p>
                     </div>
@@ -32,17 +32,17 @@ export default function Rodape() {
                 </div>
 
                 <div class="centro">
-                    <img src={logor} />
+                    <img src={logor} alt=""/>
 
                     <h8>LivroVerse © - Todos os direitos reservados</h8>
                 </div>
 
                 <div class="direita">
-                <div class="política">
+                    <h2>
                         Política de Vendas, Trocas e Privacidade<br/>
                         Termos e condições de compra<br/>
                         Fale conosco
-                </div>
+                    </h2>
                 </div>
 
             </div>

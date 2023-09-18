@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Martel+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mandali&family=Martel+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mandali&family=Martel+Sans:wght@700&family=Montserrat:wght@600&display=swap');
+
 .Rodape {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    background-color: #004156;
+    height: 62vh;
 
     .cima {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     .esquerda {
@@ -14,7 +21,77 @@
         flex-direction: column;
     }
 
-    .centro {
+    .esquerda > h3 {
+        font-family: 'Martel Sans';
+        font-size: 32px;
+        color: #FFF;
+    }
 
+    .rs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+    }
+
+    .rs > img {
+        width: 37px;
+        height: 37px;
+        margin-right: 10px;
+    }
+
+    .rs > p {
+        font-family: 'Mandali';
+        font-size: 30px;
+        color: #FFF;
+    }
+
+    .centro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: -60px;
+    }
+
+    .centro > img {
+        width: 180px;
+        height: 160px;
+    }
+
+    .centro > h8 {
+        font-family: 'Montserrat';
+        font-size: 22px;
+        color: #577883;
+        margin-top: 155px;
+        margin-bottom: -15px;
+    }
+
+    .direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .direita > h2 {
+        color: #FFF;
+        font-family: 'Mandali';
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .baixo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .baixo > h8 {
+        font-family: 'Mandali';
+        font-size: 24px;
+        color: #577883;
+        text-align: center;
     }
 }

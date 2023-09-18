@@ -1,38 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Mandali&family=Martel+Sans:wght@700&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Mandali&family=Martel+Sans:wght@700&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Centro {
+    background-color: rgba(26, 127, 159, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Ofertas {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Ofertag {
+    background-color: #FFF;
+    border-radius: 15px;
+    height: 190px;
+    width: 1372px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .esquerda-o {
+    position: absolute;
+    width: 68px;
+    height: 44px;
+    left: 10px;
+    top: 70px;
+  }
+
+  .direita-o {
+    position: absolute;
+    width: 68px;
+    height: 44px;
+    right: 10px;
+    top: 70px;
+  }
+
+  .bolinhas {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 10px;
+    left: 643px;
+  }
+
+  .bolinha1 {
+    background-color: #2c2c2c;
+    width: 21px;
+    height: 21px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+
+  .bolinha2 {
+    background-color: #686767;
+    width: 21px;
+    height: 21px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+
+  .bolinha3 {
+    background-color: #686767;
+    width: 21px;
+    height: 21px;
+    border-radius: 100px;
+  }
+
+  .Ofertasp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1372px;
+  }
+
+  .Ofertap {
+    width: 676px;
+    height: 90px;
+    background-color: #2c2c2c;
+    border-radius: 15px;
+  }
+
+  .Ofertap {
+    width: 676px;
+    height: 90px;
+    background-color: #2c2c2c;
+    border-radius: 15px;
+  }
+
+  .MaisVen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .MaisVen > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #FFF;
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  .lesq {
+    position: absolute;
+    left: 10px;
+    top: 165px;
+  }
+
+  .ldir {
+    position: absolute;
+    right: 10px;
+    top: 165px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 246px;
+    height: 433px;
+    background-color: #FFF;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .imagem {
+    width: 203px;
+    height: 304px;
+    background-color: #686767;
+    margin-bottom: 20px;
+  }
+
+  .card > h4 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .card > h2 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 24px;
   }
 }
