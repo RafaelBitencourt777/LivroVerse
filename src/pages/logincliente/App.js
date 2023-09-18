@@ -1,6 +1,6 @@
 import './App.scss';
 import React, { useState } from 'react';
-import fundolivros from '../../assets/img/flivro.png';
+import fundolivros from '../../assets/img/fundolivro.png';
 import googleLogo from '../../assets/img/google-logo.png';
 import facebookLogo from '../../assets/img/facebook-logo.png';
 import appleLogo from '../../assets/img/apple-logo.png';

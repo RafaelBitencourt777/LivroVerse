@@ -1,6 +1,6 @@
 import './App.scss';
 import React, { useState } from 'react';
-import fundolivros from '../../assets/img/flivro.png';
+import fundolivros from '../../assets/img/fcundolivros.png';
 import axios from 'axios';
 
 function Cadastrocliente() {
