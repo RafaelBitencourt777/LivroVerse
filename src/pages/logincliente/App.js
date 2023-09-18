@@ -1,12 +1,12 @@
 import './App.scss';
 import React, { useState } from 'react';
-import fundolivros from '../assets/img/livros.png';
-import googleLogo from '../assets/img/google-logo.png';
-import facebookLogo from '../assets/img/facebook-logo.png';
-import appleLogo from '../assets/img/apple-logo.png';
+import fundolivros from '../../assets/img/flivro.png';
+import googleLogo from '../../assets/img/google-logo.png';
+import facebookLogo from '../../assets/img/facebook-logo.png';
+import appleLogo from '../../assets/img/apple-logo.png';
 import axios from 'axios';
 
-function App() {
+function Lgcliente() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [mensagem, setMensagem] = useState('');
@@ -74,4 +74,4 @@ function App() {
   );
 }
 
-export default App;
+export default Lgcliente;

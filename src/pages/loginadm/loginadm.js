@@ -1,6 +1,6 @@
 import './loginadm.scss';
 
-export default function loginadm() {
+export default function Loginadm() {
 
 
     return (

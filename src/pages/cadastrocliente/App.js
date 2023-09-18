@@ -1,9 +1,9 @@
 import './App.scss';
 import React, { useState } from 'react';
-import fundolivros from '../assets/img/livros.png';
+import fundolivros from '../../assets/img/flivro.png';
 import axios from 'axios';
 
-function App() {
+function Cadastrocliente() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -75,4 +75,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cadastrocliente;
