@@ -1,5 +1,6 @@
 import './App.scss';
 import React, { useState } from 'react';
+import fundolivros from '../../assets/img/fundolivros.png';
 import axios from 'axios';
 
 function Cadastrocliente() {
@@ -28,9 +29,9 @@ function Cadastrocliente() {
 
   return (
     <div className='tudo'>
-      <div className='fundo' style={{ backgroundImage: `url('../../assets/img/fundolivros.png')` }}>
+      <div className='fundo' style={{ backgroundImage: `url(${fundolivros})` }}>
         <div className='azulao'>
-          <h3>Cadastre-se</h3>
+          <h3 className='cadas'>Cadastre-se</h3>
           <div className='input'>
             <label htmlFor="nome">Nome Completo</label>
             <input
@@ -54,6 +55,11 @@ function Cadastrocliente() {
           </div>
 
           <div className='input'>
+            <label htmlFor="confirmarEmail">Confirme o Email</label>
+            <input type="text" id="confirmarEmail" placeholder="Confirmar Email" />
+          </div>
+
+          <div className='input'>
             <label htmlFor="senha">Senha</label>
             <input
               type="password"
@@ -64,10 +70,20 @@ function Cadastrocliente() {
             />
           </div>
 
+          <div className='input'>
+            <label htmlFor="confirmarSenha">Confirmar Senha</label>
+            <input type="password" id="confirmarSenha" placeholder="Confirmar Senha"/>
+          </div>
+
           <button className="button-criar" onClick={handleCadastro}>
             Criar
           </button>
           <div className="mensagem">{mensagem}</div>
+        </div>
+        
+        <div className="termos">
+          <input type="checkbox" id="termosCheckbox" name="termos" />
+          <label htmlFor="termosCheckbox">Li e aceito os termos de uso e os termos de privacidade</label>
         </div>
       </div>
     </div>
