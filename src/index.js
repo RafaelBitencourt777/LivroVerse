@@ -9,7 +9,7 @@ import Cabecalho from './components/cabecalho';
 import Rodape from './components/rodape';
 import BarraLateral from './components/barral';
 import Lgcliente from './pages/logincliente/App.js';
-import Loginadm from './pages/loginadm/loginadm.js';
+import Lgadm from './pages/loginadm/loginadm.js';
 import Cadastrocliente from './pages/cadastrocliente/App.js';
 
 
@@ -23,7 +23,7 @@ root.render(
         <Route path='/rodape' element={<Rodape />} />
         <Route path='/barra-lateral' element={<BarraLateral />} />
         <Route path='/logincliente' element={<Lgcliente />} />
-        <Route path='/loginadm' element={<Loginadm />} />
+        <Route path='/loginadm' element={<Lgadm />} />
         <Route path='/cadastrocliente' element={<Cadastrocliente />} />
       </Routes>
     </BrowserRouter>
