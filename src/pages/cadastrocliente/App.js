@@ -1,6 +1,5 @@
 import './App.scss';
 import React, { useState } from 'react';
-import fundolivros from '../../assets/img/fcundolivros.png';
 import axios from 'axios';
 
 function Cadastrocliente() {
@@ -29,7 +28,7 @@ function Cadastrocliente() {
 
   return (
     <div className='tudo'>
-      <div className='fundo' style={{ backgroundImage: `url(${fundolivros})` }}>
+      <div className='fundo' style={{ backgroundImage: `url('../../assets/img/fundolivros.png')` }}>
         <div className='azulao'>
           <h3>Cadastre-se</h3>
           <div className='input'>
