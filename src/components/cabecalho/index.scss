@@ -7,6 +7,9 @@
     align-items:center;
     padding: 10px 30px;
     height: 135px;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
 
     .Cabecalho > img {
         width: 401px;

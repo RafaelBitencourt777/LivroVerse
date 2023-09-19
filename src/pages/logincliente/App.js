@@ -29,7 +29,7 @@ function Lgcliente() {
     <div className='tudo'>
       <div className='fundo' style={{ backgroundImage: `url(${fundolivros})` }}>
         <div className='azulao'>
-          <h3>Login</h3>
+          <h3 className='loginh'>Login</h3>
           <div className='input'>
             <label htmlFor="email">Email ou telefone</label>
             <input
@@ -49,6 +49,7 @@ function Lgcliente() {
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
             />
+            <a href="/recuperar-senha" className="forgot-password">Esqueci minha senha</a>
           </div>
           <button className="button-entrar" onClick={login}>
             Entrar

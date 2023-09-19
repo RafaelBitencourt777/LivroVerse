@@ -110,6 +110,79 @@ function App() {
           </div>
         </div>
 
+        <div className="MaisVen">
+          <h1>Mais bem avaliados de: Romance</h1>
+
+          <div className="cards">
+            <img className="lesq" src={lesq} alt=""/>
+
+            <div className="card">
+
+            </div>
+
+            <div className="card">
+              <div className="imagem"></div>
+
+              <img src={estrelas} alt=""/>
+
+              <h4>Nome do livro</h4>
+
+              <h2>Preço do livro</h2>
+
+            </div>
+
+            <div className="card">
+              <div className="imagem"></div>
+
+              <img src={estrelas} alt=""/>
+
+              <h4>Nome do livro</h4>
+
+              <h2>Preço do livro</h2>
+
+            </div>
+
+            <div className="card">
+              <div className="imagem"></div>
+
+              <img src={estrelas} alt=""/>
+
+              <h4>Nome do livro</h4>
+
+              <h2>Preço do livro</h2>
+
+            </div>
+
+            <div className="card">
+              <div className="imagem"></div>
+
+              <img src={estrelas} alt=""/>
+
+              <h4>Nome do livro</h4>
+
+              <h2>Preço do livro</h2>
+
+            </div>
+
+            <div className="card">
+              <div className="imagem"></div>
+
+              <img src={estrelas} alt=""/>
+
+              <h4>Nome do livro</h4>
+
+              <h2>Preço do livro</h2>
+
+            </div>
+
+            <div className="card">
+
+            </div>
+
+            <img className="ldir" src={ldir} alt=""/>
+          </div>
+        </div>
+
       </div>
 
       <Rodape/>
