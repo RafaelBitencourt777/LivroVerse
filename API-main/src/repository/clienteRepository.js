@@ -1,4 +1,3 @@
-
 import conexao from "./connection.js";
 
 export async function inserirCliente(cliente) {
@@ -7,7 +6,7 @@ export async function inserirCliente(cliente) {
             throw new Error('Todos os campos são obrigatórios.');
         }
 
-        if (!isValidEmail(cliente.ds_email)) {
+        if (!validaremail(cliente.ds_email)) {
             throw new Error('O e-mail informado não é válido.');
         }
 
@@ -30,8 +29,8 @@ export async function inserirCliente(cliente) {
         throw error;
     }
 }
-function isValidEmail(email) {
-    const email1= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+function validaremail(email) {
+    const email1 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return email1.test(email);
 }
 
@@ -58,6 +57,37 @@ export async function realizarLogin(email, senha) {
 
     } catch (error) {
         console.error('Erro ao realizar o login:', error.message);
+        throw error;
+    }
+}
+
+export async function trocarSenha(idCliente, senhaAntiga, novaSenha) {
+    try {
+        const cliente = await obterClientePorId(idCliente);
+        //verificaçao de cliente 
+        if (!cliente) {
+            throw new Error('Cliente não encontrado.');
+        }
+        //verificar a senha antiga 
+        if (senhaAntiga !== cliente.ds_senha) {
+            throw new Error('Senha antiga incorreta.');
+        }
+        //verificar tamanho da senha 
+        if (novaSenha.length < 8) {
+            throw new Error('A senha nova deve ter no minimo 8 caracteres');
+        }
+        //comandos
+        const sql = `UPDATE TB_Cliente SET ds_senha = ? WHERE id_cliente = ?`;
+        const resp = await conexao.query(sql, [novaSenha, idCliente]);
+
+        if (resp.affectedRows === 0) {
+            throw new Error('Falha ao atualizar a senha.');
+        }
+
+        return { message: 'Senha atualizada com sucesso.' };
+
+    } catch (error) {
+        console.error('Erro ao trocar a senha:', error.message);
         throw error;
     }
 }
