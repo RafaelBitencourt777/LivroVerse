@@ -11,6 +11,7 @@ import BarraLateral from './components/barral';
 import Lgcliente from './pages/logincliente/App.js';
 import Lgadm from './pages/loginadm/loginadm.js';
 import Cadastrocliente from './pages/cadastrocliente/App.js';
+import Prev from './pages/previsu/prev';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
         <Route path='/logincliente' element={<Lgcliente />} />
         <Route path='/loginadm' element={<Lgadm />} />
         <Route path='/cadastrocliente' element={<Cadastrocliente />} />
+        <Route path='/previsualizaçao' element={<Prev />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
