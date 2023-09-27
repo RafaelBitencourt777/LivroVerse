@@ -33,7 +33,7 @@
     }
 
     .direita {
-        width: 50vw;
+        width: 55vw;
         margin-top: -25px;
     }
 
@@ -93,6 +93,9 @@
     }
 
     .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin-top: 50px;
     }
 
@@ -100,11 +103,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 247px;
         height: 85px;
         border-radius: 10px;
         border: none;
+        background-color: #00A3FF;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 55px;
+
+        .b-textos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         
         .b-textos > p {
             font-size: 20px;
@@ -114,10 +128,73 @@
         .b-textos > h5 {
             font-size: 20px;
             color: #fff;
+            margin-top: -10px;
         }
-
-        
     }
 
+    .pdf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 247px;
+        height: 85px;
+        border-radius: 10px;
+        border: none;
+        background-color: #DB4438;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 55px;
 
+        .b-textos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .b-textos > p {
+            font-size: 20px;
+            color: #000;
+        }
+
+        .b-textos > h5 {
+            font-size: 20px;
+            color: #fff;
+            margin-top: -10px;
+        }
+    }
+
+    .kind {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 247px;
+        height: 85px;
+        border-radius: 10px;
+        border: none;
+        background-color: #079388;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 55px;
+
+        .b-textos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .b-textos > p {
+            font-size: 20px;
+            color: #000;
+        }
+
+        .b-textos > h5 {
+            font-size: 20px;
+            color: #fff;
+            margin-top: -10px;
+        }
+    }
 }

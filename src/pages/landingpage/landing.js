@@ -48,6 +48,7 @@ function App() {
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -55,10 +56,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -66,10 +68,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -77,10 +80,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -88,10 +92,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -99,7 +104,7 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
@@ -121,6 +126,7 @@ function App() {
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -128,10 +134,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -139,10 +146,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -150,10 +158,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -161,10 +170,11 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
+              <a href='/previsualizaçao'>
               <div className="imagem"></div>
 
               <img src={estrelas} alt=""/>
@@ -172,7 +182,7 @@ function App() {
               <h4>Nome do livro</h4>
 
               <h2>Preço do livro</h2>
-
+              </a>
             </div>
 
             <div className="card">
