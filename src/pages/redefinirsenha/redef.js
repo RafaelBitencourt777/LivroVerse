@@ -29,7 +29,7 @@ export default function Redef() {
             <input type="password" id="confirmarSenha" placeholder="Confirmar Senha"/>
           </div>
 
-          <div class="g-recaptcha" data-sitekey="6LdEClYoAAAAAG2meKPnhwc3qcEOYxyCfcpkeIsl"></div>
+          <div class="g-recaptcha" data-sitekey="6LdKGFYoAAAAACuLNr_bDA7z5FiLv3B5NAP5A55M"></div>
 
 
           <button className="button-criar"> Redefinir Senha </button>

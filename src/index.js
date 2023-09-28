@@ -13,7 +13,7 @@ import Lgadm from './pages/loginadm/loginadm.js';
 import Cadastrocliente from './pages/cadastrocliente/App.js';
 import Prev from './pages/previsu/prev.js';
 import Recupera from './pages/redefinirsenha/redef.js';
-
+import Sob from './pages/sobre/livro.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +29,7 @@ root.render(
         <Route path='/cadastrocliente' element={<Cadastrocliente />} />
         <Route path='/previsualizaçao' element={<Prev />} />
         <Route path='/recuperar-senha' element={<Recupera />} />
+        <Route path='/sobre' element={<Sob/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
