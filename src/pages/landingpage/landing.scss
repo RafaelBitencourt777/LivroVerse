@@ -139,6 +139,10 @@
     border-radius: 15px;
   }
 
+  .card > a {
+    text-decoration: none;
+  }
+
   .imagem {
     width: 203px;
     height: 304px;
@@ -150,11 +154,13 @@
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
+    text-decoration: none;
   }
 
   .card > h2 {
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 24px;
+    text-decoration: none;
   }
 }

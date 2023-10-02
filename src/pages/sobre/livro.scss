@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.tudo {
+    overflow-y: auto; }
+
+.livrocim {
+  width: 1270px;
+  margin-top: 160px;
+}
+
+.meio {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  background-color: #61AFC8;
+  font-style: normal;
+  padding: 20px;
+  margin: 0px;
+  color: #fff;
+}
+
+.final {
+  display: flex;
+  flex-direction: row;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 50px;
+  font-family: 'Alata', sans-serif;
+  color: #A3CEEF;
+  font-size: 18px;
+}
+
+.titulo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #3E77B6;
+  font-size: 21px;
+}
+
+.livroh {
+  margin: 20px;
+}
