@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 
 import Cabecalho from '../../components/cabecalho';
 import Rodape from '../../components/rodape';
-import estrela from '../../assets/img/estrelaamarelo.png';
-import estrelac from '../../assets/img/estrelacinza.png';
 import livro from '../../assets/img/iconlivrofis.png';
 import pdf from '../../assets/img/pdf.png';
 import kind from '../../assets/img/kindle.png';
 import voltar from '../../assets/img/setavoltar.png';
 import coracaoCurtido from '../../assets/img/corasao.png'; 
 import coracaoNaoCurtido from '../../assets/img/coracao (2).png'; 
+import StarRating from '../avlstars/star';
 
 export default function Prev() {
     const [curtido, setCurtido] = useState(false);
@@ -45,13 +44,7 @@ export default function Prev() {
                          </div>
                             <div className='avaliaçao'>
                                 <p><b>Avaliações:</b></p>
-                                <div className='estrelas'>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrelac} alt=''/>
-                                </div>
+                                <StarRating/>
                             </div>
 
                             <div className='desc'>
