@@ -56,18 +56,19 @@ function Lgcliente() {
           </button>
           <div className="mensagem">{mensagem}</div>
           <div className="social-buttons">
-            <a href="URL-DO-GOOGLE-LOGIN" className="social-button google">
-              <img src={googleLogo} alt="Google Logo" className="social-icon" />
+              <a href="URL-DO-GOOGLE-LOGIN" className="social-button google" style={{ textDecoration: 'none' }}>
+              <img src={googleLogo} alt="" className="social-icon" />
               Continuar com o Google
             </a>
-            <a href="URL-DO-FACEBOOK-LOGIN" className="social-button facebook">
-              <img src={facebookLogo} alt="Facebook Logo" className="social-icon" />
+            <a href="URL-DO-FACEBOOK-LOGIN" className="social-button facebook" style={{ textDecoration: 'none' }}>
+              <img src={facebookLogo} alt="" className="social-icon" />
               Continuar com o Facebook
             </a>
-            <a href="URL-DO-APPLE-LOGIN" className="social-button apple">
-              <img src={appleLogo} alt="Apple Logo" className="social-icon" />
+            <a href="URL-DO-APPLE-LOGIN" className="social-button apple" style={{ textDecoration: 'none' }}>
+              <img src={appleLogo} alt="" className="social-icon" />
               Continuar com a Apple
             </a>
+
           </div>
         </div>
       </div>
