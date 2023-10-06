@@ -1,0 +1,28 @@
+.Fav {
+    display: flex;
+    flex-direction: column;
+
+    .f-meio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(35,148,184,1) 87%);
+        padding: 30px;
+    }
+
+    .m-cima {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    .m-cima > h1 {
+        margin-left: 510px;
+        color: #FFF;
+        font-size: 32px;
+
+    }
+}
