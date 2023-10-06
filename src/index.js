@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import './index.scss';
+
 import App from './pages/landingpage/landing.js';
-import Cabecalho from './components/cabecalho';
-import Rodape from './components/rodape';
+import AcompPedido from './pages/acompanhamentoPedido';
+import Areacliente from './pages/areacliente';
 import BarraLateral from './components/barral';
-import Lgcliente from './pages/logincliente/App.js';
-import Lgadm from './pages/loginadm/loginadm.js';
+import Cabecalho from './components/cabecalho';
 import Cadastrocliente from './pages/cadastrocliente/App.js';
+import Favoritos from './pages/favoritos';
+import Lgadm from './pages/loginadm/loginadm.js';
+import Lgcliente from './pages/logincliente/App.js';
 import Prev from './pages/previsu/prev.js';
 import Recupera from './pages/redefinirsenha/redef.js';
+import Rodape from './components/rodape';
 import Sob from './pages/sobre/livro.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +24,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}/>
+        <Route path='/acompanhar' element={<AcompPedido />}/>
+        <Route path='/cliente' element={<Areacliente/>}/>
         <Route path='/cabecalho' element={<Cabecalho />} />
         <Route path='/rodape' element={<Rodape />} />
         <Route path='/barra-lateral' element={<BarraLateral />} />
@@ -30,6 +35,7 @@ root.render(
         <Route path='/previsualizaçao' element={<Prev />} />
         <Route path='/recuperar-senha' element={<Recupera />} />
         <Route path='/sobre' element={<Sob/>} />
+        <Route path='/favoritos' element={<Favoritos/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
