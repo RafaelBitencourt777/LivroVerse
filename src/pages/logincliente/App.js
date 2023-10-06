@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './App.scss'; 
+import './App.scss';
+import axios from 'axios';
+
 import fundolivros from '../../assets/img/fundolivros.png';
 import googleLogo from '../../assets/img/google-logo.png';
 import facebookLogo from '../../assets/img/facebook-logo.png';
 import appleLogo from '../../assets/img/apple-logo.png';
-import axios from 'axios';
 
 function Lgcliente() {
   const [email, setEmail] = useState('');
@@ -56,7 +57,7 @@ function Lgcliente() {
           </button>
           <div className="mensagem">{mensagem}</div>
           <div className="social-buttons">
-              <a href="URL-DO-GOOGLE-LOGIN" className="social-button google" style={{ textDecoration: 'none' }}>
+            <a href="URL-DO-GOOGLE-LOGIN" className="social-button google" style={{ textDecoration: 'none' }}>
               <img src={googleLogo} alt="" className="social-icon" />
               Continuar com o Google
             </a>
@@ -68,7 +69,6 @@ function Lgcliente() {
               <img src={appleLogo} alt="" className="social-icon" />
               Continuar com a Apple
             </a>
-
           </div>
         </div>
       </div>
