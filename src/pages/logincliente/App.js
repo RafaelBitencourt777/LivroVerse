@@ -1,5 +1,5 @@
-import './App.scss';
 import React, { useState } from 'react';
+import './App.scss'; 
 import fundolivros from '../../assets/img/fundolivros.png';
 import googleLogo from '../../assets/img/google-logo.png';
 import facebookLogo from '../../assets/img/facebook-logo.png';
@@ -56,18 +56,19 @@ function Lgcliente() {
           </button>
           <div className="mensagem">{mensagem}</div>
           <div className="social-buttons">
-            <button className="social-button google">
-              <img src={googleLogo} alt="Google Logo" className="social-icon" />
+              <a href="URL-DO-GOOGLE-LOGIN" className="social-button google" style={{ textDecoration: 'none' }}>
+              <img src={googleLogo} alt="" className="social-icon" />
               Continuar com o Google
-            </button>
-            <button className="social-button facebook">
-              <img src={facebookLogo} alt="Facebook Logo" className="social-icon" />
+            </a>
+            <a href="URL-DO-FACEBOOK-LOGIN" className="social-button facebook" style={{ textDecoration: 'none' }}>
+              <img src={facebookLogo} alt="" className="social-icon" />
               Continuar com o Facebook
-            </button>
-            <button className="social-button apple">
-              <img src={appleLogo} alt="Apple Logo" className="social-icon" />
+            </a>
+            <a href="URL-DO-APPLE-LOGIN" className="social-button apple" style={{ textDecoration: 'none' }}>
+              <img src={appleLogo} alt="" className="social-icon" />
               Continuar com a Apple
-            </button>
+            </a>
+
           </div>
         </div>
       </div>

@@ -1,16 +1,22 @@
 import './prev.scss';
+import React, { useState } from 'react';
 
 import Cabecalho from '../../components/cabecalho';
 import Rodape from '../../components/rodape';
-import coracao from '../../assets/img/coracao (2).png';
-import estrela from '../../assets/img/estrelaamarelo.png';
-import estrelac from '../../assets/img/estrelacinza.png';
 import livro from '../../assets/img/iconlivrofis.png';
 import pdf from '../../assets/img/pdf.png';
 import kind from '../../assets/img/kindle.png';
 import voltar from '../../assets/img/setavoltar.png';
+import coracaoCurtido from '../../assets/img/corasao.png'; 
+import coracaoNaoCurtido from '../../assets/img/coracao (2).png'; 
+import StarRating from '../avlstars/star';
 
 export default function Prev() {
+    const [curtido, setCurtido] = useState(false);
+  
+    const handleClickCurtir = () => {
+      setCurtido(!curtido);
+    };
 
     return(
         <div className='Prev'>
@@ -18,28 +24,27 @@ export default function Prev() {
 
             <div className='Meio'>
                 <div className='quad'>
-                    <img className='volta' src={voltar} alt=''/>
+                    <a href='./'><img className='volta' src={voltar} alt=''/></a>
                     <div className='imagem-texto'>
                         
                         <div className='img' alt='aqui seria a imagem do livro'></div>
 
                         <div className='direita'>
-                            <div className='titulo-e-heart'>
-                                <div className='textos'>
-                                    <h3>Lorem Ipsum</h3>
-                                    <h4>Por <label>Lorem Ipsum</label> </h4>
-                                </div>
-                                <img className='heart' src={coracao} alt=''/>
-                            </div>
+                        <div className='titulo-e-heart'>
+                         <div className='textos'>
+                            <h3>Lorem Ipsum</h3>
+                            <h4>Por <label>Lorem Ipsum</label></h4>
+                        </div>
+                        <img
+                            className={`heart ${curtido ? 'curtido' : ''}`}
+                            src={curtido ? coracaoCurtido : coracaoNaoCurtido}
+                            alt='Coração'
+                            onClick={handleClickCurtir}
+                         />
+                         </div>
                             <div className='avaliaçao'>
                                 <p><b>Avaliações:</b></p>
-                                <div className='estrelas'>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrela} alt=''/>
-                                    <img src={estrelac} alt=''/>
-                                </div>
+                                <StarRating/>
                             </div>
 
                             <div className='desc'>

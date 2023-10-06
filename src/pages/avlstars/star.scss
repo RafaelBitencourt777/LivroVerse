@@ -1,0 +1,17 @@
+.star-rating {
+    display: inline-block;
+    cursor: pointer;
+  
+    span {
+      font-size: 44px;
+      color: gray;
+      &:hover {
+        color: gold; 
+      }
+      &.active {
+        transform: scale(1.5); 
+        color: gold;
+      }
+    }
+  }
+  

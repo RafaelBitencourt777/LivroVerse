@@ -9,7 +9,7 @@ export default function BarraLateral() {
         <div className='BarraLateral'>
             <div className='cima'>
                 <div className='user'>
-                    <img/>
+                    <img src='' alt=''/>
                 </div>
 
                 <div className='textos'>

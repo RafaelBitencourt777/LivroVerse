@@ -63,6 +63,18 @@
         width: 49px;
         height: 43px;
         margin-top: 25px;
+        transition: transform 0.5s ease, opacity 0.3s ease;
+        cursor: pointer;
+    }
+  
+
+    .heart.curtido {
+        transform: scale(1.2); 
+        opacity: 0.8; 
+        width: 49px;
+        height: 43px;
+        cursor: pointer;
+        margin-right: 5px;
     }
 
     .avaliaçao {
@@ -97,6 +109,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 50px;
+        cursor: pointer;
     }
 
     .fis {
