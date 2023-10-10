@@ -150,17 +150,48 @@
     margin-bottom: 20px;
   }
 
-  .card > h4 {
+  a > h4 {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
     text-decoration: none;
+    color: #000;
   }
 
-  .card > h2 {
+  a > h2 {
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 24px;
     text-decoration: none;
+    color: #000;
+  }
+
+  @media (max-width: 1300px) {
+
+    .App {
+      width: 100vw;
+    }
+    
+    .Ofertag {
+      width: 1210px;
+    }
+
+    .bolinhas {
+      left: 580px;
+    }
+
+    .Ofertasp {
+      width: 1210px;
+    }
+
+    .Ofertap {
+      width: 600px;
+    }
+
+    .cards {
+      width: 100%;
+      width: auto;
+    }
+
   }
 }

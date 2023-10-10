@@ -94,4 +94,42 @@
         color: #577883;
         text-align: center;
     }
+
+    @media (max-width: 1300px) {
+        
+        .Rodape {
+            padding: 50px;
+        }
+
+        .esquerda {
+            margin-bottom: 20px;
+        }
+
+        .rs > p {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .rs {
+            margin-bottom: 20px;
+        }
+
+        .centro {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        .direita {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .baixo {
+            margin-top: -5px;
+        }
+
+        .baixo > h8 {
+            font-size: 15px;
+        } 
+    }
 }

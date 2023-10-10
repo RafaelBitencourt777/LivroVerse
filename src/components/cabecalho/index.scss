@@ -54,4 +54,26 @@
             
         }
     }
+
+    @media (max-width: 1300px) {
+        
+        .Cabecalho > img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 10px;
+        }
+        
+        .barrapesquisa {
+            margin-right: 100px;
+        }
+
+        .barrapesquisa > input {
+            width: 520px;
+        }
+
+        .trilogia a.link-padrao {
+            margin-left: 15px;
+        }
+        
+    }
 }

@@ -45,14 +45,19 @@
 
     .textos {
         width: 50vw;
+        margin-top: -70px;
     }
 
     .textos > h3 {
         font-size: 40px;
+        color: #000;
+        margin-left: -70px;
     }
 
     .textos > h4 {
         font-size: 28px;
+        color: #000;
+        margin-left: -70px;
     }
 
     label {
@@ -110,6 +115,7 @@
         justify-content: space-between;
         margin-top: 50px;
         cursor: pointer;
+        width: 700px;
     }
 
     .fis {
@@ -117,7 +123,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 247px;
+        width: 227px;
         height: 85px;
         border-radius: 10px;
         border: none;
@@ -150,7 +156,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 247px;
+        width: 227px;
         height: 85px;
         border-radius: 10px;
         border: none;
@@ -183,7 +189,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 247px;
+        width: 227px;
         height: 85px;
         border-radius: 10px;
         border: none;
