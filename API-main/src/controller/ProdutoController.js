@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import {
-  cadastroProduto,
-  alterarProduto,
-  consultarProdutoPorID,
+import { 
+  cadastrarProduto,
+  alterarProdutoPorID,
   removerProdutoPorID,
+  consultarProdutoPorID 
 } from '../repository/produtoRepository.js';
 
 const endpoints = Router();
@@ -26,7 +26,7 @@ endpoints.post('/produto/cadastrar', async (req, resp) => {
       bl_favorito,
     } = req.body;
 
-    await cadastroProduto(
+    await cadastrarProduto(
       id_categoria,
       id_avaliacao,
       nm_produto,
@@ -65,7 +65,7 @@ endpoints.put('/produto/alterar/:id', async (req, resp) => {
       bl_favorito,
     } = req.body;
 
-    await alterarProduto(
+    await alterarProdutoPorID(
       id,
       nm_produto,
       vl_preco_fis,

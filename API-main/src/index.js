@@ -1,13 +1,17 @@
 import 'dotenv/config';
-import  Express  from 'express';
+import Express from 'express';
 import cors from 'cors';
 
-import tarefasController from './controller/tarefasController.js'
+import admEndpoints from './controller/admController.js';
+import clienteEndpoints from './controller/clienteController.js';
+import produtoEndpoints from './controller/ProdutoController.js';
 
-let servidor = Express();
+const servidor = Express();
 servidor.use(cors());
 servidor.use(Express.json());
 
-servidor.use(tarefasController);
+servidor.use('/adm', admEndpoints); // Use um nome de rota exclusivo
+servidor.use('/cliente', clienteEndpoints); // Use um nome de rota exclusivo
+servidor.use('/produto', produtoEndpoints); // Use um nome de rota exclusivo
 
-servidor.listen(process.env.PORT, ()=> console.log('API SUBIU!!!! AEEEEEEEEEE'))
+servidor.listen(process.env.PORT, () => console.log('API SUBIU!!!! AEEEEEEEEEE'));

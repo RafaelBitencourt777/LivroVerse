@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { realizarLoginAdm } from '../repository/administradorRepository.js';
+import { realizarLoginAdm } from '../repository/admRepository.js';
 
 const endpoints = Router();
 endpoints.post('/adm/login', async (req, resp) => {
