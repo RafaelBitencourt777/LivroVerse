@@ -170,6 +170,7 @@
 
     .App {
       width: 100vw;
+      overflow: hidden;
     }
     
     .Ofertag {
@@ -188,9 +189,8 @@
       width: 600px;
     }
 
-    .cards {
-      width: 100%;
-      width: auto;
+    .card {
+      width: 179px;
     }
 
   }

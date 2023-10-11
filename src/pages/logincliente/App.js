@@ -29,6 +29,7 @@ function Lgcliente() {
   return (
     <div className='tudo'>
       <div className='fundo' style={{ backgroundImage: `url(${fundolivros})` }}>
+        <p className='textobondoso'>Não possui Login? <a className='cadastrobruto' href='/cadastrocliente'><u>CADASTRE-se</u></a> </p>
         <div className='azulao'>
           <h3 className='loginh'>Login</h3>
           <div className='input'>

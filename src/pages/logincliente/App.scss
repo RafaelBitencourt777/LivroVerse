@@ -6,6 +6,19 @@
   overflow: hidden;
 }
 
+.cadastrobruto{
+  color: #fff;
+}
+
+.cadastrobruto:hover{
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.textobondoso {
+  color: #fff;
+}
+
 .azulao {
   background: linear-gradient(rgba(0, 26, 255, 0.5), rgba(0, 26, 255, 0.5)), #17DED2;
   width: 350px;
