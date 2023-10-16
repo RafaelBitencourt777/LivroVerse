@@ -17,6 +17,7 @@ import Prev from './pages/previsu/prev.js';
 import Recupera from './pages/redefinirsenha/redef.js';
 import Rodape from './components/rodape';
 import Sob from './pages/sobre/livro.js';
+import Pgto from './pages/frmspgto/pgto.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
         <Route path='/recuperar-senha' element={<Recupera />} />
         <Route path='/sobre' element={<Sob/>} />
         <Route path='/favoritos' element={<Favoritos/>} />
+        <Route path='/pagamento' element={<Pgto/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

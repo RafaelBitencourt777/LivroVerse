@@ -10,7 +10,10 @@ import user from '../../assets/img/user.png';
 function Cabecalho() {
   return (
     <div className="Cabecalho">
-      <img src={logo} alt='' />
+
+      <a className='l' href='/'>
+        <img src={logo} alt=''/>
+      </a>
 
       <div className='barrapesquisa'>
         <img className='lupa' src={lupa} alt=''/>
