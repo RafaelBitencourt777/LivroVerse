@@ -1,13 +1,28 @@
 import conexao from "./connection.js"; 
 
 
-
 // Função para cadastrar um produto.
 async function cadastrarProduto(produto) {
   try {
-    const sql = 'INSERT INTO tb_produto SET ?';
-    const [result] = await conexao.query(sql, produto);
-    return result[0].insertId; // Retorna o ID do produto cadastrado.
+    const sql = 'INSERT INTO tb_produto (id_categoria, id_avaliacao, nm_produto, vl_preco_fis, ds_desc, vl_preco_pdf, vl_preco_kindle, vl_preco_promocional, bt_destaque, bt_promocao, bt_disponivel, qtd_estoque, bl_favorito) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+    const values = [
+      produto.id_categoria,
+      produto.id_avaliacao,
+      produto.nm_produto,
+      produto.vl_preco_fis,
+      produto.ds_desc,
+      produto.vl_preco_pdf,
+      produto.vl_preco_kindle,
+      produto.vl_preco_promocional,
+      produto.bt_destaque,
+      produto.bt_promocao,
+      produto.bt_disponivel,
+      produto.qtd_estoque,
+      produto.bl_favorito
+    ];
+
+    const [result] = await conexao.query(sql, values);
+    return result.insertId; // Retorna o ID do produto cadastrado.
   } catch (error) {
     throw error;
   }
@@ -18,7 +33,7 @@ async function alterarProdutoPorID(id, novosDados) {
   try {
     const sql = 'UPDATE tb_produto SET ? WHERE id_produto = ?';
     const [result] = await conexao.query(sql, [novosDados, id]);
-    return result[0].affectedRows > 0; // Retorna true se algum registro foi atualizado.
+    return result.affectedRows > 0; // Retorna true se algum registro foi atualizado.
   } catch (error) {
     throw error;
   }
@@ -45,7 +60,7 @@ async function removerProdutoPorID(id) {
   try {
     const sql = 'DELETE FROM tb_produto WHERE id_produto = ?';
     const [result] = await conexao.query(sql, id);
-    return result[0].affectedRows > 0; // Retorna true se algum registro foi removido.
+    return result.affectedRows > 0; // Retorna true se algum registro foi removido.
   } catch (error) {
     throw error;
   }

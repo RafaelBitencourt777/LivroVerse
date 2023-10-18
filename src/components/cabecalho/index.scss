@@ -11,9 +11,9 @@
     z-index: 2;
     background-color: #fff;
 
-    .Cabecalho > img {
-        width: 401px;
-        height: 54px;
+    .l > img {
+        width: 382px;
+        height: 108px;
     }
 
     .barrapesquisa{
@@ -53,5 +53,27 @@
             height: 54px;
             
         }
+    }
+
+    @media (max-width: 1300px) {
+        
+        .Cabecalho > img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 10px;
+        }
+        
+        .barrapesquisa {
+            margin-right: 100px;
+        }
+
+        .barrapesquisa > input {
+            width: 520px;
+        }
+
+        .trilogia a.link-padrao {
+            margin-left: 15px;
+        }
+        
     }
 }

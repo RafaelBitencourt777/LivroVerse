@@ -1,6 +1,7 @@
 import './index.scss';
 
 import Cabecalho from '../../components/cabecalho';
+import Rodape from '../../components/rodape'
 import voltar from '../../assets/img/setavoltar.png';
 import heart from '../../assets/img/corasao.png';
 
@@ -14,7 +15,9 @@ export default function Favoritos() {
             <div className='f-meio'>
 
                 <div className='m-cima'>
-                    <img src={voltar} alt='' />
+                    <a href='/'>
+                        <img src={voltar} alt='' />
+                    </a>
                     <h1>Favoritos</h1>
                 </div>
 
@@ -22,107 +25,135 @@ export default function Favoritos() {
 
                     <div className='f-cards'>
                         
-                        <div className='f-card'>
+                            <div className='f-card'>
 
-                            <img src={heart} alt='' />
+                                <img src={heart} alt='' />
 
-                            <div className='livro'></div>
+                                <a href='/previsualizaçao'>
 
-                            <h3>Nome do Livro</h3>
+                                    <div className='livro'></div>
 
-                            <button>Comprar</button>
+                                    <h3>Nome do Livro</h3>
 
-                        </div>
+                                </a>
 
-                        <div className='f-card'>
+                                <button>Comprar</button>
 
-                            <img src={heart} alt='' />
+                            </div>
 
-                            <div className='livro'></div>
+                            <div className='f-card'>
 
-                            <h3>Nome do Livro</h3>
+                                <img src={heart} alt='' />
 
-                            <button>Comprar</button>
+                                <a href='/previsualizaçao'>
 
-                        </div>
+                                    <div className='livro'></div>
 
-                        <div className='f-card'>
+                                    <h3>Nome do Livro</h3>
 
-                            <img src={heart} alt='' />
+                                </a>
 
-                            <div className='livro'></div>
+                                <button>Comprar</button>
 
-                            <h3>Nome do Livro</h3>
+                            </div>
 
-                            <button>Comprar</button>
+                            <div className='f-card'>
 
-                        </div>
+                                <img src={heart} alt='' />
 
-                        <div className='f-card'>
+                                <a href='/previsualizaçao'>
 
-                            <img src={heart} alt='' />
+                                <div className='livro'></div>
 
-                            <div className='livro'></div>
+                                <h3>Nome do Livro</h3>
 
-                            <h3>Nome do Livro</h3>
+                                </a>
 
-                            <button>Comprar</button>
+                                <button>Comprar</button>
 
-                        </div>
+                            </div>
 
-                        <div className='f-card'>
+                            <div className='f-card'>
 
-                            <img src={heart} alt='' />
+                                <img src={heart} alt='' />
 
-                            <div className='livro'></div>
+                                <a href='/previsualizaçao'>
 
-                            <h3>Nome do Livro</h3>
+                                    <div className='livro'></div>
 
-                            <button>Comprar</button>
+                                    <h3>Nome do Livro</h3>
 
-                        </div>
+                                </a>
 
-                        <div className='f-card'>
+                                <button>Comprar</button>
 
-                            <img src={heart} alt='' />
+                            </div>
 
-                            <div className='livro'></div>
+                            <div className='f-card'>
 
-                            <h3>Nome do Livro</h3>
+                                <img src={heart} alt='' />
 
-                            <button>Comprar</button>
+                                <a href='/previsualizaçao'>
+                                    
+                                    <div className='livro'></div>
 
-                        </div>
+                                    <h3>Nome do Livro</h3>
 
-                        <div className='f-card'>
+                                </a>
+                                <button>Comprar</button>
 
-                            <img src={heart} alt='' />
+                            </div>
 
-                            <div className='livro'></div>
+                            <div className='f-card'>
 
-                            <h3>Nome do Livro</h3>
+                                <img src={heart} alt='' />
 
-                            <button>Comprar</button>
+                                <a href='/previsualizaçao'>
+                                    <div className='livro'></div>
 
-                        </div>
+                                    <h3>Nome do Livro</h3>
+                                </a>
 
-                        <div className='f-card'>
+                                <button>Comprar</button>
 
-                            <img src={heart} alt='' />
+                            </div>
 
-                            <div className='livro'></div>
+                            <div className='f-card'>
 
-                            <h3>Nome do Livro</h3>
+                                <img src={heart} alt='' />
 
-                            <button>Comprar</button>
+                                <a href='/previsualizaçao'>
+                                    <div className='livro'></div>
 
-                        </div>
+                                    <h3>Nome do Livro</h3>
+                                </a>
+
+                                <button>Comprar</button>
+
+                            </div>
+
+                            <div className='f-card'>
+
+                                <img src={heart} alt='' />
+
+                                <a href='/previsualizaçao'>
+                                    <div className='livro'></div>
+
+                                    <h3>Nome do Livro</h3>
+                                </a>
+
+                                <button>Comprar</button>
+
+                            </div>
 
                     </div>
 
                 </div>
 
             </div>
+
+            <Rodape/>
+
         </div>
     )
 }

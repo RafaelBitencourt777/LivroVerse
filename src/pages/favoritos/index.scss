@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .Fav {
     display: flex;
     flex-direction: column;
@@ -20,9 +22,79 @@
 
 
     .m-cima > h1 {
-        margin-left: 510px;
+        margin-left: 475px;
         color: #FFF;
         font-size: 32px;
 
+    }
+
+    .quadro {
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 24px 48px;
+    }
+
+    .f-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .f-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .f-card > img {
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+    }
+
+    .f-card > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .livro {
+        width: 165px;
+        height: 229px;
+        background-color: #686767;
+    }
+
+    .f-card > button {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+        width: 165px;
+        height: 49px;
+        border: none;
+        border-radius: 10px;
+        color: #FFF;
+        background-color: #DB4438;
+        transition-timing-function: ease-in-out;
+        transition-duration: .2s;
+        transition-property: background-color,color,box-shadow,-webkit-box-shadow;
+    }
+
+    .f-card > button:hover {
+        cursor: pointer;
+        background-color: #d84d43;
     }
 }
