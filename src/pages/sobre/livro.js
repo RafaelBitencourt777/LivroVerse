@@ -1,6 +1,6 @@
 import './livro.scss';
-import livrocima from '../../assets/img/livros-viajar-pelo-mundo-1 1.png';
-import livroheart from '../../assets/img/amor-livro 1.png';
+import livrocima from '../../assets/img/livros-viajar-pelo-mundo-11.png';
+import livroheart from '../../assets/img/amor-livro1.png';
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 
@@ -19,7 +19,7 @@ export default function Sobre() {
           <p>Diversos tipos de livros físicos, PDF e Kindle. Além de marca-páginas de variados estilos.</p>
         </div>
       </div>
-      <Rodape />
+      <Rodape/>
     </div>
   );
 }
