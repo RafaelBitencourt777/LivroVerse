@@ -1,4 +1,4 @@
-import './pgto.scss';
+import React from 'react';
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 import voltar from '../../assets/img/setavoltar.png';
@@ -7,13 +7,16 @@ import boleto from '../../assets/img/Boleto.png';
 import creditodebito from '../../assets/img/Cartao.png';
 import pix from '../../assets/img/PIX.png';
 
+import './pgto.scss';
+
 export default function Pgto() {
-    return (
+  return (
+      
       <div className="pgmt">
         <Cabecalho/>
 
         <div className='tudoacho'>
-          <img src={voltar} alt=''/>
+          <a href='./previsualizaçao'><img src={voltar} alt=''/></a>
           <div className='boxbranca'>
             <div className='formaspgto'>
               <img src={cesta} alt=''/>

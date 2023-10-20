@@ -77,64 +77,52 @@
     background-color: #52a1cf;
 }
 
-.botõesbrabo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
+.botõesbrabo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.debito{
+  .debitooo,
+  .boleto,
+  .PIX {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    background-color: #3E88B3;
-    color: #FFFFFF;
-    width: 685px;
-    border-radius: 8px;
-    border: none;
-    height: 70px;
-}
-
-.debito > img {
-    height: 60px;
-    display: flex;
-
-}
-
-.debito > p, h5 {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    width: 500px; /* Ajuste a largura conforme necessário */
+    height: 100px;
+    margin-bottom: 20px;
+
+    img {
+      margin-right: 10px;
+    }
+
+    .bt-txt {
+      text-align: center;
+
+      p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      b {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .debitooo {
+    background-color: #FE3737;
+    color: #ffffff;
+  }
+
+  .boleto {
+    background-color: #8D959A;
+    color: #ffffff;
+    width: 450px; /* Ajuste a largura conforme necessário */
+  }
+
+  .PIX {
+    background-color: #079388;
+    color: #ffffff;
+  }
 }
-
-
-.bt-txt{
- display: flex;
- flex-direction: row;
-}
-
-.boleto {
-    display: flex;
-    flex-direction: row;
-    background-color: #3E88B3;
-    color: #FFFFFF;
-    width: 500px;
-    border-radius: 8px;
-    border: none;
-    justify-content: center;
-    height: 70px;
-}
-
-.PIX{
-    display: flex;
-    flex-direction: row;
-    background-color: #3E88B3;
-    color: #FFFFFF;
-    width: 685px;
-    border-radius: 8px;
-    border: none;
-    justify-content: center;
-    height: 70px;
-}
-
