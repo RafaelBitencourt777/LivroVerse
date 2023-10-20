@@ -65,5 +65,14 @@ async function removerProdutoPorID(id) {
     throw error;
   }
 }
+async function pesquisarProdutos(pesquisa) {
+  try {
+    const sql = 'SELECT * FROM tb_produto WHERE nm_produto LIKE ?';
+    const [rows] = await conexao.query(sql, [`%${pesquisa}%`]);
+    return rows;
+  } catch (error) {
+    throw error;
+  }
+}
 
-export { cadastrarProduto, alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
+export { cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
