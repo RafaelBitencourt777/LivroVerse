@@ -2,7 +2,7 @@ import React from 'react';
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 import voltar from '../../assets/img/setavoltar.png';
-import cesta from '../../assets/img/cesta 1.png';
+import cesta from '../../assets/img/cesta1.png';
 import boleto from '../../assets/img/Boleto.png';
 import creditodebito from '../../assets/img/Cartao.png';
 import pix from '../../assets/img/PIX.png';

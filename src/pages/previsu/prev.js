@@ -8,7 +8,7 @@ import pdf from '../../assets/img/pdf.png';
 import kind from '../../assets/img/kindle.png';
 import voltar from '../../assets/img/setavoltar.png';
 import coracaoCurtido from '../../assets/img/corasao.png'; 
-import coracaoNaoCurtido from '../../assets/img/coracao (2).png'; 
+import coracaoNaoCurtido from '../../assets/img/coracao2.png'; 
 import StarRating from '../avlstars/star';
 
 export default function Prev() {
