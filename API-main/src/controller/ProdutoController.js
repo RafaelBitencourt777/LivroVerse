@@ -116,4 +116,24 @@ endpoints.delete('/produto/remover/:id', async (req, resp) => {
   }
 });
 
-export default endpoints;
+
+endpoints.get('/produto/pesquisar', async (req, resp) => {
+  try {
+    const { pesquisa } = req.query;
+
+    if (!pesquisa) {
+      resp.status(400).send('Nenhum termo de pesquisa fornecido.');
+      return;
+    }
+
+    const resultados = await pesquisarProdutos(pesquisa);
+
+    if (resultados.length === 0) {
+      resp.status(404).send({ erro: 'Nenhum produto encontrado para a pesquisa.' });
+    } else {
+      resp.status(200).json(resultados);
+    }
+  } catch (error) {
+    resp.status(500).send({ erro: 'Ocorreu um erro ao realizar a pesquisa.' });
+  }
+});
