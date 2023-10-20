@@ -21,13 +21,15 @@ export default function AcompPedido(){
 
             <Cabecalho/>
 
-            <div ClassName='a-meio'>
+            <div className='Meio'>
 
                 <div className='a-quadro'>
 
                     <div className='a-cima'>
 
-                        <img alt='' src={voltar} />
+                        <a href='previsualizaçao'>
+                            <img alt='' src={voltar} />
+                        </a>
 
                         <div className='a-text'>
 
