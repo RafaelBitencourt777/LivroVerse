@@ -79,8 +79,11 @@
 
 .botõesbrabo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: 50px;
 
   .debitooo,
   .boleto,
@@ -88,41 +91,84 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px; /* Ajuste a largura conforme necessário */
-    height: 100px;
+    width: 500px; 
+    height: 60px;
     margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
 
     img {
-      margin-right: 10px;
+      width: 60px;
+
     }
 
     .bt-txt {
       text-align: center;
-
+      margin: 0;
+      padding: 0 200px;
+    
       p {
-        margin: 0;
+        margin: 1px;
+        padding: 1px; 
         font-size: 18px;
       }
-
+    
       b {
         font-size: 16px;
       }
-    }
+
+      
+    }    
   }
 
   .debitooo {
     background-color: #FE3737;
     color: #ffffff;
+    width: 695px; 
   }
 
   .boleto {
     background-color: #8D959A;
     color: #ffffff;
-    width: 450px; /* Ajuste a largura conforme necessário */
+    width: 435px; 
   }
 
   .PIX {
     background-color: #079388;
     color: #ffffff;
+    width: 695px; 
+    margin: 0;
   }
+
+  .bt-txt-pix {
+    text-align: center;
+    margin: 0;
+    padding: 0 290px;
+  
+    p {
+      margin: 1px;
+      padding: 1px; 
+      font-size: 18px;
+    }
+  
+    b {
+      font-size: 16px;
+    }
+  }    
+
+  .bt-txt-blt {
+    text-align: center;
+    margin: 0;
+    padding: 0 150px;
+  
+    p {
+      margin: 0px;
+      padding: 0px; 
+      font-size: 18px;
+    }
+  
+    b {
+      font-size: 16px;
+    }
+  }    
 }
