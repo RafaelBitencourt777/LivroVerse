@@ -8,7 +8,7 @@ import pagconfirm from '../../assets/img/pag-confirm.png';
 import pedsep from '../../assets/img/ped-em-sep.png';
 import pedrealiz from '../../assets/img/ped-realiz.png';
 import pedtrnsp from '../../assets/img/ped-transp.png';
-import verificar from '../../assets/img/verificar.png';
+import verificar from '../../assets/img/verificar-acomp.png';
 import voltar from '../../assets/img/setavoltar.png';
 import StarRating from '../avlstars/star';
 
@@ -21,13 +21,15 @@ export default function AcompPedido(){
 
             <Cabecalho/>
 
-            <div ClassName='a-meio'>
+            <div className='Meio'>
 
                 <div className='a-quadro'>
 
                     <div className='a-cima'>
 
-                        <img alt='' src={voltar} />
+                        <a href='previsualizaçao'>
+                            <img alt='' src={voltar} />
+                        </a>
 
                         <div className='a-text'>
 

@@ -64,17 +64,17 @@ export default function Pgto() {
 
                     <button className='boleto'>
                       <img src={boleto} alt=''/>
-                      <div className='bt-txt'>
+                      <div className='bt-txt-blt'>
                       <p>Boleto</p>
-                      <h5><b>Preço</b></h5>
+                      <b>Preço</b>
                       </div>
                     </button>
 
                     <button className='PIX'>
                       <img src={pix} alt=''/>
-                      <div className='bt-txt'>
+                      <div className='bt-txt-pix'>
                       <p>Pix</p>
-                      <h5><b>Preço</b></h5>
+                      <b>Preço</b>
                       </div>
                     </button>
         
