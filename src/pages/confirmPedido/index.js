@@ -53,7 +53,7 @@ export default function ConfirmPed() {
 
                             <div className='ap-inp'>
 
-                                <img src={menos} alt='' />
+                                <img className='menos' src={menos} alt='' />
 
                                 <input type='number'/>
 
@@ -85,7 +85,7 @@ export default function ConfirmPed() {
 
                             <h1>Resumo do Pedido</h1>
 
-                            <div className='pdt-vl'>
+                            <div className='ap-r'>
 
                                 <h2>x prduto</h2>
 
@@ -93,7 +93,7 @@ export default function ConfirmPed() {
 
                             </div>
 
-                            <div className='ap-dfrete'>
+                            <div className='ap-r'>
 
                                 <h2>Frete</h2>
 
@@ -113,7 +113,7 @@ export default function ConfirmPed() {
 
                             <h2>R$3,54 Off <br/>Pagando <br/>por PIX</h2>
 
-                            <button>Fazer Pedido</button>
+                            <button className='f-p'>Fazer Pedido</button>
 
                         </div>
 
