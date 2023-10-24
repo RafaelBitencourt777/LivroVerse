@@ -15,3 +15,4 @@ servidor.use('/cliente', clienteEndpoints);
 servidor.use('/produto', produtoEndpoints); 
 
 servidor.listen(process.env.PORT, () => console.log('API SUBIU!!!! AEEEEEEEEEE'));
+
