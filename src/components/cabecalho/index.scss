@@ -3,99 +3,121 @@
 .Cabecalho {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  height: 135px;
+  height: 14%;
   position: fixed;
   z-index: 2;
   background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-  .l > img {
-    width: 382px;
-    height: 108px;
-  }
+.Cabecalho .l > img {
+  width: 32vh;
+  height: 10vh;
+}
 
-  .barrapesquisa {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 100px;
-    position: relative;
-    margin-left: 20px;
-   
+.Cabecalho .barrapesquisa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 100px;
+  position: relative;
+  margin-left: 20px;
+}
 
-    .lupa-container {
-      cursor: pointer;
-      position:absolute;
-      left: 10px;
-      top: 7px;
+.Cabecalho .barrapesquisa .lupa-container {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
 
+.Cabecalho .barrapesquisa .lupa {
+  height: 4.8vh;
+  width: 4.8vh;
+}
 
-      .lupa {
-        height:4.8vh;
-        width:4.8vh;          
-      }
-    }
+.Cabecalho .barrapesquisa input {
+  width: 561px;
+  height: 5.9vh;
+  border-radius: 50px;
+  background-color: #c2c2c2;
+  border: none;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
 
-    input {
-      width: 561px;
-      height: 5.9vh ;
-      border-radius: 50px;
-      background-color: #c2c2c2;
-      border: none;
-      text-align: center;
-      font-family: 'Inter', sans-serif;
-      font-size: 20px;
+.Cabecalho .barrapesquisa input:focus {
+  outline: none;
+}
 
-      &:focus {
-        outline: none;
-      }
-    }
-  }
+.Cabecalho .trilogia {
+  display: flex;
+  flex-direction: row;
+}
 
-  .trilogia {
-    display: flex;
-    flex-direction: row;
+.Cabecalho .trilogia a.link-padrao {
+  margin-left: 30px;
+  width: 54px;
+  height: 54px;
+}
 
-    a.link-padrao {
-      margin-left: 30px;
-      width: 54px;
-      height: 54px;
-    }
-  }
+.Cabecalho .resultados {
+  display: flex;
+  flex-direction: column;
+}
 
-  .resultados {
-    display: flex;
+.Cabecalho .resultados div {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .Cabecalho {
     flex-direction: column;
-
-    div {
-      padding: 10px;
-      border: 1px solid #ddd;
-      margin-top: 10px;
-      background-color: #f9f9f9;
-      font-family: 'Inter', sans-serif;
-      font-size: 18px;
-    }
+    align-items: flex-start;
+    height: auto;
   }
 
-  @media (max-width: 1300px) {
-    .l > img {
-      max-width: 100%;
-      height: auto;
-      margin-left: 10px;
-    }
-
-    .barrapesquisa {
-      margin-right: 100px;
-
-      input {
-        width: 520px;
-      }
-    }
-
-    .trilogia a.link-padrao {
-      margin-left: 15px;
-    }
+  .Cabecalho .barrapesquisa {
+    margin: 20px 0;
   }
+
+  .Cabecalho .barrapesquisa input {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .Cabecalho .trilogia {
+    margin-top: 20px;
+  }
+
+  .Cabecalho .trilogia a.link-padrao {
+    margin: 0 15px;
+  }
+}
+::-webkit-scrollbar {
+  height: 12px; 
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0cb9ee; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
