@@ -108,3 +108,4 @@ export async function trocarSenha(idCliente, senhaAntiga, novaSenha) {
         throw error;
     }
 }
+export default{trocarSenha,realizarLogin,validaremail,inserirCliente};
