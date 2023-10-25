@@ -20,7 +20,7 @@ export default function Pgto() {
           <div className='boxbranca'>
             <div className='formaspgto'>
               <img src={cesta} alt=''/>
-              <h2>Formas de Pagamento</h2>
+              <h2 className='fmrs'>Formas de Pagamento</h2>
             </div>
 
             <div className='dados'>
