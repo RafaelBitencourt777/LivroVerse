@@ -30,3 +30,4 @@ export async function realizarLoginAdm(email, senha) {
         throw error;
     }
 }
+export default {realizarLoginAdm}

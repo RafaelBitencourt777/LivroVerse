@@ -75,4 +75,4 @@ async function pesquisarProdutos(pesquisa) {
   }
 }
 
-export { cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
+export default { cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };

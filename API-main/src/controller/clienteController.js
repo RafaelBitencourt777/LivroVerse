@@ -6,23 +6,14 @@ import {
 
 const endpoints = Router();
 
-endpoints.post('/cliente/cadastrar', async (req, resp) => {
+endpoints.post('/cliente/cadastro', async (req, resp) => {
+  let cliente = req.body;
+
   try {
-    const { nm_cliente, ds_telefone, ds_email, ds_cpf, ds_senha } = req.body;
-
-    const cliente = {
-      nm_cliente,
-      ds_telefone,
-      ds_email,
-      ds_cpf,
-      ds_senha,
-    };
-
-    const dados = await inserirCliente(cliente);
-
-    resp.status(201).send('Cliente cadastrado com sucesso.');
+    let dados = await inserirCliente(cliente);
+    resp.send(dados);
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao cadastrar o cliente.' });
+    resp.status(400).send(error.message);
   }
 });
 

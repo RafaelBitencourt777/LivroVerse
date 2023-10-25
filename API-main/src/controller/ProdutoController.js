@@ -1,10 +1,15 @@
 import { Router } from 'express';
-import { 
+
+// Certifique-se de que o caminho para o módulo produtoRepository.js está correto
+import produtoRepository from '../repository/produtoRepository.js';
+
+const {
   cadastrarProduto,
+  pesquisarProdutos,
   alterarProdutoPorID,
-  removerProdutoPorID,
-  consultarProdutoPorID 
-} from '../repository/produtoRepository.js';
+  consultarProdutoPorID,
+  removerProdutoPorID
+} = produtoRepository;
 
 const endpoints = Router();
 
@@ -26,7 +31,7 @@ endpoints.post('/produto/cadastrar', async (req, resp) => {
       bl_favorito,
     } = req.body;
 
-    await cadastrarProduto(
+    await cadastrarProduto({
       id_categoria,
       id_avaliacao,
       nm_produto,
@@ -39,8 +44,8 @@ endpoints.post('/produto/cadastrar', async (req, resp) => {
       bt_promocao,
       bt_disponivel,
       qtd_estoque,
-      bl_favorito
-    );
+      bl_favorito,
+    });
 
     resp.status(201).send('Produto cadastrado com sucesso.');
   } catch (error) {
@@ -65,8 +70,7 @@ endpoints.put('/produto/alterar/:id', async (req, resp) => {
       bl_favorito,
     } = req.body;
 
-    await alterarProdutoPorID(
-      id,
+    await alterarProdutoPorID(id, {
       nm_produto,
       vl_preco_fis,
       ds_desc,
@@ -77,8 +81,8 @@ endpoints.put('/produto/alterar/:id', async (req, resp) => {
       bt_promocao,
       bt_disponivel,
       qtd_estoque,
-      bl_favorito
-    );
+      bl_favorito,
+    });
 
     resp.status(200).send('Produto alterado com sucesso.');
   } catch (error) {
@@ -116,7 +120,6 @@ endpoints.delete('/produto/remover/:id', async (req, resp) => {
   }
 });
 
-
 endpoints.get('/produto/pesquisar', async (req, resp) => {
   try {
     const { pesquisa } = req.query;
@@ -137,3 +140,6 @@ endpoints.get('/produto/pesquisar', async (req, resp) => {
     resp.status(500).send({ erro: 'Ocorreu um erro ao realizar a pesquisa.' });
   }
 });
+
+export default endpoints;
+

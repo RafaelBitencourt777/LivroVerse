@@ -18,7 +18,7 @@ import Recupera from './pages/redefinirsenha/redef.js';
 import Rodape from './components/rodape';
 import Sob from './pages/sobre/livro.js';
 import Pgto from './pages/frmspgto/pgto.js';
-import AcompPed from './pages/confirmPedido';
+import ConfirmPed from './pages/confirmPedido';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,7 +39,7 @@ root.render(
         <Route path='/sobre' element={<Sob/>} />
         <Route path='/favoritos' element={<Favoritos/>} />
         <Route path='/pagamento' element={<Pgto/>} />
-        <Route path='/confirmar-pedido' element={<AcompPed />} />
+        <Route path='/confirmar-pedido' element={<ConfirmPed />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

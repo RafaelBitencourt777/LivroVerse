@@ -10,8 +10,9 @@ const servidor = Express();
 servidor.use(cors());
 servidor.use(Express.json());
 
-servidor.use('/adm', admEndpoints); // Use um nome de rota exclusivo
-servidor.use('/cliente', clienteEndpoints); // Use um nome de rota exclusivo
-servidor.use('/produto', produtoEndpoints); // Use um nome de rota exclusivo
+servidor.use('/adm', admEndpoints); 
+servidor.use('/cliente', clienteEndpoints); 
+servidor.use('/produto', produtoEndpoints); 
 
 servidor.listen(process.env.PORT, () => console.log('API SUBIU!!!! AEEEEEEEEEE'));
+

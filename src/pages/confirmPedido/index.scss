@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap');
+
+.ConfirmPed {
+    display: flex;
+    flex-direction: column;
+
+    .ap-meio {
+        margin-top: 140px;
+        background: rgb(97,175,200);
+        background: linear-gradient(0deg, rgba(97,175,200,1) 0%, rgba(26,127,159,1) 100%);
+        padding: 30px;
+    }
+
+    .ap-quadro {
+        background-color: #F2EDED;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .ap-esquerda {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .mini-titulos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 23px;
+    }
+
+    .titulo-trio {
+        display: flex;
+        flex-direction: row;
+        margin-right: 35px;
+    }
+
+    .titulo-trio > h3 {
+        margin-left: 30px;
+        font-size: 22px;
+    }
+
+    .ap-equadrinho {
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .Livro {
+        width: 203px;
+        height: 304px;
+        background-color: #686767;
+        margin-right: 20px;
+    }
+
+    .bookname {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .ap-inp {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .menos {
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        top: 10px;
+        left: -10px;
+    }
+
+    .ap-inp > input{
+        width: 131px;
+        height: 47px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+   
+    .ap-inp > input[type=number]::-webkit-inner-spin-button, 
+    .ap-inp > input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    .ap-inp > input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .ap-inp > input[type=number] {
+        padding-right: 25px;
+    }
+
+    .mais {
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        top: 15px;
+        right: 10px;
+    }
+
+    .ap-equadrinho > p {
+        margin-right: 20px;
+    }
+
+    .ap-equadrinho > h2 {
+
+    }
+
+    .ap-esquerda {
+
+    }
+
+    .ap-frete {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ap-frete > input {
+        width: 274px;
+        height: 43px;
+        border-radius: 20px;
+        padding: 0px 10px;
+    }
+
+    .ap-frete > button {
+        border-color: #2394B8;
+        color: #2394B8;
+        background-color: #fff;
+        width: 118px;
+        height: 43px;
+    }
+
+    .ap-dquadrinho {
+        display: flex;
+        flex-direction: column;
+        background-color: #D9D9D9;
+        border-radius: 20px;
+        padding: 20px;
+        width: 320px;
+        height: 638px;
+    }
+
+    .ap-dquadrinho > h1 {
+        text-align: center;
+    }
+
+    .ap-r {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    hr {
+        width: 325px;
+        height: 4px;
+        background-color: #A1A0A4;
+    }
+
+    .ap-total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ap-dquadrinho > h2 {
+        text-align: right;
+        color: #1B9507;
+        margin-bottom: 100px;
+    }
+
+    .f-p {
+        width: 325px;
+        height: 85px;
+        border: none;
+        border-radius: 20px;
+        background-color: #3E88B3;
+        color: #fff;
+    }
+
+}

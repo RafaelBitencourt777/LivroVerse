@@ -13,13 +13,19 @@ export async function inserirCliente(cliente) {
             throw new Error('O e-mail informado não é válido.');
         }
 
-        // Cria uma consulta SQL para inserir o cliente.
+        // Verifica se o campo id_assinatura está presente e é um número válido.
+        if (typeof cliente.id_assinatura !== 'number' || cliente.id_assinatura <= 0) {
+            throw new Error('ID de assinatura inválido.');
+        }
+
+        // Cria uma consulta SQL para inserir o cliente com a assinatura.
         const sql = `INSERT INTO TB_Cliente
-            (nm_cliente, ds_telefone, ds_email, ds_cpf, ds_senha)
-            VALUES (?, ?, ?, ?, ?)`;
+            (id_assinatura, nm_cliente, ds_telefone, ds_email, ds_cpf, ds_senha)
+            VALUES (?, ?, ?, ?, ?, ?)`;
 
         // Executa a consulta e insere o cliente no banco de dados.
         const resp = await conexao.query(sql, [
+            cliente.id_assinatura,
             cliente.nm_cliente,
             cliente.ds_telefone,
             cliente.ds_email,
@@ -34,6 +40,7 @@ export async function inserirCliente(cliente) {
         throw error;
     }
 }
+
 
 // Função para validar o formato de um e-mail.
 function validaremail(email) {
@@ -108,3 +115,4 @@ export async function trocarSenha(idCliente, senhaAntiga, novaSenha) {
         throw error;
     }
 }
+export default{trocarSenha,realizarLogin,validaremail,inserirCliente};
