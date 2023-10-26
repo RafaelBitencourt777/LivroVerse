@@ -18,7 +18,7 @@
         align-items: center;
         margin-top: 20px;
         border-radius: 20px;
-        padding: 20px;
+        padding: 10px;
     }
 
     .ap-esquerda {
@@ -34,15 +34,23 @@
         margin-left: 23px;
     }
 
+    .mini-titulos > h3 {
+        font-size: 22px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
     .titulo-trio {
         display: flex;
         flex-direction: row;
-        margin-right: 35px;
+        margin-right: 5px;
     }
 
     .titulo-trio > h3 {
         margin-left: 30px;
         font-size: 22px;
+        font-family: 'Montserrat';
+        font-weight: 400;
     }
 
     .ap-equadrinho {
@@ -57,7 +65,7 @@
         width: 203px;
         height: 304px;
         background-color: #686767;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .bookname {
@@ -66,9 +74,27 @@
         width: 200px;
     }
 
+    .bookname > h1 {
+        font-size: 32px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    .bookname > p {
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+    }
+
+    .emp {
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
     .ap-inp {
         position: relative;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .menos {
@@ -84,6 +110,8 @@
         height: 47px;
         text-align: center;
         font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 300;
     }
 
    
@@ -91,10 +119,6 @@
     .ap-inp > input[type=number]::-webkit-outer-spin-button { 
         -webkit-appearance: none; 
         margin: 0; 
-    }
-
-    .ap-inp > input[type=number] {
-        -moz-appearance: textfield;
     }
 
     .ap-inp > input[type=number] {
@@ -110,15 +134,23 @@
     }
 
     .ap-equadrinho > p {
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        font-weight: 300;
     }
 
     .ap-equadrinho > h2 {
-
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: 500;
     }
-
-    .ap-esquerda {
-
+    
+    .ap-esquerda > h2 {
+        font-family: 'Inter';
+        font-size: 24px;
+        font-weight: 400;
     }
 
     .ap-frete {
@@ -134,6 +166,9 @@
         height: 43px;
         border-radius: 20px;
         padding: 0px 10px;
+        font-size: 24px;
+        font-family: 'Inter';
+        font-weight: 400;
     }
 
     .ap-frete > button {
@@ -142,6 +177,9 @@
         background-color: #fff;
         width: 118px;
         height: 43px;
+        font-size: 22px;
+        font-family: 'Montserrat';
+        font-weight: 400;
     }
 
     .ap-dquadrinho {
@@ -150,18 +188,31 @@
         background-color: #D9D9D9;
         border-radius: 20px;
         padding: 20px;
-        width: 320px;
+        width: 310px;
         height: 638px;
     }
 
     .ap-dquadrinho > h1 {
         text-align: center;
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 600;
     }
 
     .ap-r {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .ap-r > h2 {
+        font-size: 22px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+    .grt {
+        color: #4BAE4F;
     }
 
     hr {
@@ -176,10 +227,19 @@
         justify-content: space-between;
     }
 
+    .ap-total > h1 {
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
     .ap-dquadrinho > h2 {
         text-align: right;
         color: #1B9507;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
     }
 
     .f-p {
@@ -189,6 +249,10 @@
         border-radius: 20px;
         background-color: #3E88B3;
         color: #fff;
+        align-self: center;
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 600;
     }
 
 }
