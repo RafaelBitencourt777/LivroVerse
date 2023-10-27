@@ -1,4 +1,6 @@
 import mysql from 'mysql2/promise';
+import Express from 'express';
+import cors from 'cors';
 
 const conexao = await mysql.createConnection({
     host: process.env.HOST,
