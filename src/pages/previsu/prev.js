@@ -53,28 +53,37 @@ export default function Prev() {
                             </div>
                             
                             <div className='botoes'>
-                                <button className='fis'>
-                                    <img src={livro} alt=''/>
-                                    <div className='b-textos'>
-                                        <p>Modelo Físico</p>
-                                        <h5><b>Preço</b></h5>
-                                    </div>
-                                </button>
-                                <button className='pdf'>
-                                    <img src={pdf} alt=''/>
-                                    <div className='b-textos'>
-                                        <p>Modelo PDF</p>
-                                        <h5><b>Preço</b></h5>
-                                    </div>
-                                </button>
+
+                                <a className='botaos' href='/pagamento'>
+                                    <button className='fis'>
+                                        <img src={livro} alt=''/>
+                                        <div className='b-textos'>
+                                            <p>Modelo Físico</p>
+                                            <h5><b>Preço</b></h5>
+                                        </div>
+                                    </button>
+                                </a>
+
+                                <a className='botaos' href='/pagamento'>
+                                    <button className='pdf'>
+                                        <img src={pdf} alt=''/>
+                                        <div className='b-textos'>
+                                            <p>Modelo PDF</p>
+                                            <h5><b>Preço</b></h5>
+                                        </div>
+                                    </button>
+                                </a>
                     
-                                <button className='kind'>
-                                    <img src={kind} alt=''/>
-                                    <div className='b-textos'>
-                                        <p>Modelo Kindle</p>
-                                        <h5><b>Preço</b></h5>
-                                    </div>
-                                </button>
+                                <a className='botaos' href='/pagamento'>
+                                    <button className='kind'>
+                                        <img src={kind} alt=''/>
+                                        <div className='b-textos'>
+                                            <p>Modelo Kindle</p>
+                                            <h5><b>Preço</b></h5>
+                                        </div>
+                                    </button>
+                                </a>
+
                             </div>
                         </div>
                     </div>

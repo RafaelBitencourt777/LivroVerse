@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import './index.scss';
-
 import Cabecalho from '../../components/cabecalho';
 import Rodape from '../../components/rodape';
 import voltar from '../../assets/img/setavoltar.png';
@@ -7,25 +7,34 @@ import mais from '../../assets/img/mais-quant.png';
 import menos from '../../assets/img/menos-quant.png';
 
 export default function ConfirmPed() {
+    const [cep, setCep] = useState('');
+
+    const handleCepChange = (event) => {
+        let value = event.target.value;
+        value = value.replace(/\D/g, ''); 
+        if (value.length > 8) {
+            value = value.substr(0, 8); 
+        }
+        if (value.length > 5) {
+            value = `${value.substr(0, 5)}-${value.substr(5, 3)}`; 
+        }
+        setCep(value);
+    };
+
+    const [n, setN] = useState(1);
+
+    
 
     return (
         <div className='ConfirmPed'>
-
-            <Cabecalho/>
-
+            <Cabecalho />
             <div className='ap-meio'>
-
                 <a href='/previsualizaçao'>
-
-                    <img src={voltar} alt=''/>
-                
+                    <img src={voltar} alt='' />
                 </a>
-
                 <div className='ap-quadro'>
-
                     <div className='ap-esquerda'>
-
-                        <div className='mini-titulos'>
+                                <div className='mini-titulos'>
 
                             <h3>Produto</h3>
 
@@ -37,9 +46,9 @@ export default function ConfirmPed() {
 
                             </div>
 
-                        </div>
+                            </div>
 
-                        <div className='ap-equadrinho'>
+                            <div className='ap-equadrinho'>
 
                             <div className='Livro'></div>
 
@@ -65,20 +74,17 @@ export default function ConfirmPed() {
 
                             <h2>Preço</h2>
 
-                        </div>
-
-                        <h2>Calcule o Frete</h2>
-
+                            </div>
+                            <h2>Calcule o Frete</h2>
                         <div className='ap-frete'>
-
-                            <input/>
-
+                            <input
+                                placeholder='Digite seu CEP'
+                                value={cep}
+                                onChange={handleCepChange}
+                            />
                             <button>OK</button>
-
                         </div>
-
                     </div>
-
                     <div className='ap-direita'>
 
                         <div className='ap-dquadrinho'>
@@ -113,7 +119,9 @@ export default function ConfirmPed() {
 
                             <h2>R$3,54 Off <br/>Pagando <br/>por PIX</h2>
 
-                            <button className='f-p'>Fazer Pedido</button>
+                            <a className='botaos' href='/acompanhar'>
+                                <button className='f-p'>Fazer Pedido</button>
+                            </a>
 
                         </div>
 

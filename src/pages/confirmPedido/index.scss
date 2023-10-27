@@ -99,7 +99,7 @@
 
     .menos {
         position: absolute;
-        width: 70px;
+        width: 60px;
         height: 30px;
         top: 10px;
         left: -10px;
@@ -126,7 +126,7 @@
 
     .mais {
         position: absolute;
-        width: 30px;
+        width: 20px;
         height: 20px;
         top: 15px;
         right: 10px;
@@ -215,7 +215,7 @@
     }
 
     hr {
-        width: 325px;
+        width: 312px;
         height: 4px;
         background-color: #A1A0A4;
     }
@@ -252,6 +252,16 @@
         font-size: 28px;
         font-family: 'Montserrat';
         font-weight: 600;
+    }
+
+    .f-p:hover {
+        cursor: pointer;
+    }
+
+    .botaos {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
     }
 
 }
