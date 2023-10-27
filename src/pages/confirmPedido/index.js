@@ -47,7 +47,7 @@ export default function ConfirmPed() {
 
                                 <h1>Nome do Livro</h1>
 
-                                <p>Vendido e entregue por:<br/>LivroVerse</p>
+                                <p>Vendido e entregue por:<br/><label className='emp'>LivroVerse</label></p>
 
                             </div>
 

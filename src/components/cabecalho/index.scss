@@ -23,9 +23,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 25px;
   position: relative;
-  margin-left: 20px;
+  margin-left: -15px;
 }
 
 .Cabecalho .barrapesquisa .lupa-container {
@@ -80,6 +80,24 @@
   font-size: 18px;
 }
 
+::-webkit-scrollbar {
+height: 12px; 
+width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #0cb9ee; 
+border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
 @media (max-width: 768px) {
   .Cabecalho {
     flex-direction: column;
@@ -88,36 +106,20 @@
   }
 
   .Cabecalho .barrapesquisa {
-    margin: 20px 0;
+    margin: 20px 0px;
   }
-
+  
   .Cabecalho .barrapesquisa input {
     width: 100%;
     max-width: 400px;
   }
-
+  
   .Cabecalho .trilogia {
     margin-top: 20px;
   }
-
+  
   .Cabecalho .trilogia a.link-padrao {
     margin: 0 15px;
   }
-}
-::-webkit-scrollbar {
-  height: 12px; 
-  width: 12px; 
-}
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0cb9ee; 
-  border-radius: 6px; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+} 
