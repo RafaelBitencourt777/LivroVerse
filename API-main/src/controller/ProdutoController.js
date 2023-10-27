@@ -1,6 +1,4 @@
 import { Router } from 'express';
-
-// Certifique-se de que o caminho para o módulo produtoRepository.js está correto
 import produtoRepository from '../repository/produtoRepository.js';
 
 const {
@@ -49,7 +47,7 @@ endpoints.post('/produto/cadastrar', async (req, resp) => {
 
     resp.status(201).send('Produto cadastrado com sucesso.');
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao cadastrar o produto.' });
+    resp.status(500).send({ erro: 'Ocorreu um erro ao cadastrar o produto: ' + error.message });
   }
 });
 
@@ -86,7 +84,7 @@ endpoints.put('/produto/alterar/:id', async (req, resp) => {
 
     resp.status(200).send('Produto alterado com sucesso.');
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao alterar o produto.' });
+    resp.status(500).send({ erro: 'Ocorreu um erro ao alterar o produto.' + error.message  });
   }
 });
 
@@ -101,7 +99,7 @@ endpoints.get('/produto/consultar/:id', async (req, resp) => {
       resp.status(200).send(produto);
     }
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao consultar o produto.' });
+    resp.status(500).send({ erro: 'Ocorreu um erro ao consultar o produto.' + error.message  });
   }
 });
 
@@ -116,7 +114,7 @@ endpoints.delete('/produto/remover/:id', async (req, resp) => {
       resp.status(404).send({ erro: 'Produto não encontrado.' });
     }
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao remover o produto.' });
+    resp.status(500).send({ erro: 'Ocorreu um erro ao remover o produto.'  + error.message });
   }
 });
 
@@ -132,12 +130,12 @@ endpoints.get('/produto/pesquisar', async (req, resp) => {
     const resultados = await pesquisarProdutos(pesquisa);
 
     if (resultados.length === 0) {
-      resp.status(404).send({ erro: 'Nenhum produto encontrado para a pesquisa.' });
+      resp.status(404).send({ erro: 'Nenhum produto encontrado para a pesquisa.' + error.message  });
     } else {
       resp.status(200).json(resultados);
     }
   } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao realizar a pesquisa.' });
+    resp.status(500).send({ erro: 'Ocorreu um erro ao realizar a pesquisa.' + error.message  });
   }
 });
 
