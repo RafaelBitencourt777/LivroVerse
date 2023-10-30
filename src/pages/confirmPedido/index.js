@@ -29,7 +29,7 @@ export default function ConfirmPed() {
         <div className='ConfirmPed'>
             <Cabecalho />
             <div className='ap-meio'>
-                <a href='/previsualizaçao'>
+                <a href='/pagamento'>
                     <img src={voltar} alt='' />
                 </a>
                 <div className='ap-quadro'>
