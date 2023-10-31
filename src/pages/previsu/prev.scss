@@ -114,7 +114,6 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 50px;
-        cursor: pointer;
         width: 700px;
     }
 
@@ -131,6 +130,7 @@
         padding-top: 5px;
         padding-left: 10px;
         padding-right: 55px;
+        cursor: pointer;
 
         .b-textos {
             display: flex;
@@ -164,6 +164,7 @@
         padding-top: 5px;
         padding-left: 10px;
         padding-right: 55px;
+        cursor: pointer;
 
         .b-textos {
             display: flex;
@@ -197,6 +198,7 @@
         padding-top: 5px;
         padding-left: 10px;
         padding-right: 55px;
+        cursor: pointer;
 
         .b-textos {
             display: flex;
@@ -215,5 +217,14 @@
             color: #fff;
             margin-top: -10px;
         }
+    }
+
+    .botaos {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .botaos:hover {
+        cursor: pointer;
     }
 }

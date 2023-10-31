@@ -145,13 +145,21 @@
   .debitooo {
     background-color: #FE3737;
     color: #ffffff;
-    width: 695px; 
+    width: 695px;
+  }
+
+  .debitooo:hover {
+    cursor: pointer;
   }
 
   .boleto {
     background-color: #8D959A;
     color: #ffffff;
-    width: 435px; 
+    width: 435px;
+  }
+
+  .boleto:hover {
+    cursor: pointer;
   }
 
   .PIX {
@@ -159,6 +167,10 @@
     color: #ffffff;
     width: 695px; 
     margin: 0;
+  }
+
+  .PIX:hover {
+    cursor: pointer;
   }
 
   .bt-txt-pix {
@@ -191,5 +203,10 @@
     b {
       font-size: 16px;
     }
-  }    
+  }  
+  
+  .botaos {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }

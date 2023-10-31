@@ -35,9 +35,9 @@ export default function Favoritos() {
 
                                     <h3>Nome do Livro</h3>
 
-                                </a>
+                                    <button>Comprar</button>
 
-                                <button>Comprar</button>
+                                </a>
 
                             </div>
 
@@ -51,25 +51,9 @@ export default function Favoritos() {
 
                                     <h3>Nome do Livro</h3>
 
-                                </a>
-
-                                <button>Comprar</button>
-
-                            </div>
-
-                            <div className='f-card'>
-
-                                <img src={heart} alt='' />
-
-                                <a href='/previsualizaçao'>
-
-                                <div className='livro'></div>
-
-                                <h3>Nome do Livro</h3>
+                                    <button>Comprar</button>
 
                                 </a>
-
-                                <button>Comprar</button>
 
                             </div>
 
@@ -83,9 +67,25 @@ export default function Favoritos() {
 
                                     <h3>Nome do Livro</h3>
 
+                                    <button>Comprar</button>
+
                                 </a>
 
-                                <button>Comprar</button>
+                            </div>
+
+                            <div className='f-card'>
+
+                                <img src={heart} alt='' />
+
+                                <a href='/previsualizaçao'>
+
+                                    <div className='livro'></div>
+
+                                    <h3>Nome do Livro</h3>
+
+                                    <button>Comprar</button>
+
+                                </a>
 
                             </div>
 
@@ -99,8 +99,9 @@ export default function Favoritos() {
 
                                     <h3>Nome do Livro</h3>
 
+                                    <button>Comprar</button>
+
                                 </a>
-                                <button>Comprar</button>
 
                             </div>
 
@@ -109,12 +110,14 @@ export default function Favoritos() {
                                 <img src={heart} alt='' />
 
                                 <a href='/previsualizaçao'>
+
                                     <div className='livro'></div>
 
                                     <h3>Nome do Livro</h3>
-                                </a>
 
-                                <button>Comprar</button>
+                                    <button>Comprar</button>
+
+                                </a>
 
                             </div>
 
@@ -123,12 +126,14 @@ export default function Favoritos() {
                                 <img src={heart} alt='' />
 
                                 <a href='/previsualizaçao'>
+
                                     <div className='livro'></div>
 
                                     <h3>Nome do Livro</h3>
-                                </a>
 
-                                <button>Comprar</button>
+                                    <button>Comprar</button>
+
+                                </a>
 
                             </div>
 
@@ -137,12 +142,14 @@ export default function Favoritos() {
                                 <img src={heart} alt='' />
 
                                 <a href='/previsualizaçao'>
+                                    
                                     <div className='livro'></div>
 
                                     <h3>Nome do Livro</h3>
-                                </a>
 
-                                <button>Comprar</button>
+                                    <button>Comprar</button>
+
+                                </a>
 
                             </div>
 

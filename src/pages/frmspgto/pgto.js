@@ -52,31 +52,37 @@ export default function Pgto() {
               </div>
               <div className='botõesbrabo'>
 
-                    <div className='debitooo'>
-                      <img src={creditodebito} alt=''/>
-                      <div className='bt-txt'>
-                      
-                      <p>Cartão de crédito / Débito</p>
-    
-                      <b>Preço</b>
+                    <a className='botaos' href='/confirmar-pedido'>
+                      <div className='debitooo'>
+                        <img src={creditodebito} alt=''/>
+                        <div className='bt-txt'>
+                        
+                        <p>Cartão de crédito / Débito</p>
+      
+                        <b>Preço</b>
+                        </div>
                       </div>
-                    </div>
+                    </a>
 
-                    <button className='boleto'>
-                      <img src={boleto} alt=''/>
-                      <div className='bt-txt-blt'>
-                      <p>Boleto</p>
-                      <b>Preço</b>
-                      </div>
-                    </button>
+                    <a className='botaos' href='/confirmar-pedido'>
+                      <button className='boleto'>
+                        <img src={boleto} alt=''/>
+                        <div className='bt-txt-blt'>
+                        <p>Boleto</p>
+                        <b>Preço</b>
+                        </div>
+                      </button>
+                    </a>
 
-                    <button className='PIX'>
-                      <img src={pix} alt=''/>
-                      <div className='bt-txt-pix'>
-                      <p>Pix</p>
-                      <b>Preço</b>
-                      </div>
-                    </button>
+                    <a className='botaos' href='/confirmar-pedido'>
+                      <button className='PIX'>
+                        <img src={pix} alt=''/>
+                        <div className='bt-txt-pix'>
+                        <p>Pix</p>
+                        <b>Preço</b>
+                        </div>
+                      </button>
+                    </a>
         
                 </div>
             </div>

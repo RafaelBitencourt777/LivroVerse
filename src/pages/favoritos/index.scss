@@ -77,7 +77,7 @@
         background-color: #686767;
     }
 
-    .f-card > button {
+    a > button {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 20px;
@@ -93,7 +93,7 @@
         transition-property: background-color,color,box-shadow,-webkit-box-shadow;
     }
 
-    .f-card > button:hover {
+    a > button:hover {
         cursor: pointer;
         background-color: #d84d43;
     }
