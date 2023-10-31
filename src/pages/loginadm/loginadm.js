@@ -13,7 +13,7 @@ export default function Lgadm() {
 
   const loginAdmin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/admin/login', {
+      const response = await axios.post('http://129.148.42.252:3018/admin/login', {
         usuario,
         senha,
       });
