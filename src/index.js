@@ -6,7 +6,6 @@ import './index.scss';
 
 import App from './pages/landingpage/landing.js';
 import AcompPedido from './pages/acompanhamentoPedido';
-import Areacliente from './pages/areacliente';
 import BarraLateral from './components/barral';
 import Cabecalho from './components/cabecalho';
 import Cadastrocliente from './pages/cadastrocliente/App.js';
@@ -20,6 +19,7 @@ import Sob from './pages/sobre/livro.js';
 import Pgto from './pages/frmspgto/pgto.js';
 import ConfirmPed from './pages/confirmPedido';
 import MyPed from './pages/mypedidos/my.js';
+import Conta from './pages/areaconta/area.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,7 +28,6 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}/>
         <Route path='/acompanhar' element={<AcompPedido />}/>
-        <Route path='/cliente' element={<Areacliente/>}/>
         <Route path='/cabecalho' element={<Cabecalho />} />
         <Route path='/rodape' element={<Rodape />} />
         <Route path='/barra-lateral' element={<BarraLateral />} />
@@ -42,6 +41,7 @@ root.render(
         <Route path='/pagamento' element={<Pgto/>} />
         <Route path='/confirmar-pedido' element={<ConfirmPed />} />
         <Route path='/meus-pedidos' element={<MyPed />} />
+        <Route path='/conta' element={<Conta />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

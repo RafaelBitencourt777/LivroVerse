@@ -52,7 +52,7 @@ function Cabecalho() {
         <Link to="/favoritos" className="link-padrao">
           <img src={coracao} alt='' />
         </Link>
-        <NavLink to="/cliente" className="link-padrao">
+        <NavLink to="/conta" className="link-padrao">
           <img src={user} alt='' />
         </NavLink>
       </div>
