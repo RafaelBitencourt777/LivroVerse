@@ -1,0 +1,44 @@
+.Ped {
+    display: flex;
+    flex-direction: column;
+
+    .square {
+        background-color: #D8D6D6;
+        margin: 40px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .direita {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .direita > p {
+        justify-content: center;
+        align-items: center;
+        margin-top-bottom      
+    }
+
+    .Meio {
+        margin-top: 150px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(35,148,184,1) 87%);        
+        padding: 30px;
+    }
+
+    .quad {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    .img {
+        width: 220px;
+        height: 320px;
+        background-color: #686767;
+        margin: 20px;
+    }
+}

@@ -1,19 +1,8 @@
 import './my.scss';
-import React, { useState, useEffect } from 'react';
 import Cabecalho from '../../components/cabecalho';
 import Rodape from '../../components/rodape';
 
 export default function MyPed() {
-
-    const [dados, setDados] = useState(null); // Inicialmente, os dados são nulos
-
-  useEffect(() => {
-    fetch('nossa/url/da/api')
-      .then(response => response.json())
-      .then(data => setDados(data)) // Define os dados para o estado quando a API retornar os dados
-      .catch(error => console.error('Erro ao buscar dados da API:', error));
-  }, []); 
-
 
     return (
         <div className='Ped'>
@@ -21,19 +10,68 @@ export default function MyPed() {
         <div className='Meio'>
 
         <div className='quad'>
+        <h1 className='MyPedss'>Meus pedidos</h1>
+
+
         <h4>Em Andamento</h4>
-            <div className='quadrados'>
+            <div className='quadrados-cima'>
                 <div className='square'>
                     <div className='img' alt='aqui seria a imagem do livro'></div>
                     <div className='direita'>
                         <p>Status:</p>
-                        <p>{dados.status}</p> 
-                        <img className='nadainda' src={dados.imagem} alt='Imagem do livro' /> 
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='status do bagos' /> 
                     </div>
                 </div>
             
+                <div className='square'>
+                    <div className='img' alt='aqui seria a imagem do livro'></div>
+                    <div className='direita'>
+                        <p>Status:</p>
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='Imagem do livro' /> 
+                    </div>
+                </div>
+
+                <div className='square'>
+                    <div className='img' alt='aqui seria a imagem do livro'></div>
+                    <div className='direita'>
+                        <p>Status:</p>
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='Imagem do livro' /> 
+                    </div>
+                </div>
             </div>
-        
+
+            <h4>Concluídos</h4>
+            <div className='quadrados-baixo'>
+                <div className='square'>
+                    <div className='img' alt='aqui seria a imagem do livro'></div>
+                    <div className='direita'>
+                        <p>Status:</p>
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='Imagem do livro' /> 
+                    </div>
+                </div>
+            
+                <div className='square'>
+                    <div className='img' alt='aqui seria a imagem do livro'></div>
+                    <div className='direita'>
+                        <p>Status:</p>
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='Imagem do livro' /> 
+                    </div>
+                </div>
+
+                <div className='square'>
+                    <div className='img' alt='aqui seria a imagem do livro'></div>
+                    <div className='direita'>
+                        <p>Status:</p>
+                        <p>INDETERMINADO</p> 
+                        <img className='nadainda' alt='Imagem do livro' /> 
+                    </div>
+                </div>
+            </div>
         
         
         
