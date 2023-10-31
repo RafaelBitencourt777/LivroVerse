@@ -19,6 +19,7 @@ import Rodape from './components/rodape';
 import Sob from './pages/sobre/livro.js';
 import Pgto from './pages/frmspgto/pgto.js';
 import ConfirmPed from './pages/confirmPedido';
+import MyPed from './pages/mypedidos/my.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,6 +41,7 @@ root.render(
         <Route path='/favoritos' element={<Favoritos/>} />
         <Route path='/pagamento' element={<Pgto/>} />
         <Route path='/confirmar-pedido' element={<ConfirmPed />} />
+        <Route path='/meus-pedidos' element={<MyPed />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
