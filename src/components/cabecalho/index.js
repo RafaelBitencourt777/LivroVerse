@@ -20,7 +20,7 @@ function Cabecalho() {
 
   const realizarPesquisa = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/produto/pesquisar', {
+      const response = await axios.get('http://129.148.42.252:3018/produto/pesquisar', {
         params: {
           pesquisa: pesquisa,
         },

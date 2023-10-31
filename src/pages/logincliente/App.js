@@ -14,7 +14,7 @@ function Lgcliente() {
 
   const login = async () => {
     try {
-      const response = await axios.post('http://http://129.148.42.252:3018/cliente/login', { email, senha });
+      const response = await axios.post('http://129.148.42.252:3018/cliente/login', { email, senha });
 
       if (response.status === 200) {
         setMensagem('Login bem-sucedido!');
