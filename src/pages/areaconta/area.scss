@@ -1,3 +1,102 @@
-*   {
-    margin: 0px ; /*tira depois*/
-};
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+.Conta {
+    display: flex;
+    flex-direction: column;
+
+    .cont-meio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(35,148,184,1) 87%);
+        padding: 30px;
+    }
+
+    .v {
+        width: 40px;
+    }
+
+    .seta {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 15px;
+    }
+
+    .cont-quadro {
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .nível {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+
+    .nível > p {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 20px;
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    .text-nvl {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-nvl > h2 {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 28px;
+        color: #2394B8;
+    }
+
+    .cont-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .cont-user > h1 {
+        margin-top: 100px;
+        font-size: 40px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    .cont-user > h3 {
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -10px;
+    }
+
+    .cont-user > h6 {
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -10px;
+    }
+
+    .conta-img {
+        position: absolute;
+        top: -70px;
+    }
+
+    .conta-mais {
+        position: absolute;
+        top: 70px;
+        right: 453px;
+    }
+
+}
