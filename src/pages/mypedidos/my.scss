@@ -5,21 +5,44 @@
     .square {
         background-color: #D8D6D6;
         margin: 40px;
-        width: 600px;
+        width: 300px;
         display: flex;
         flex-direction: row;
     }
 
+    .quadrados-cima{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .MyPedss{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: normal
+    }
+
+    .eanda{
+        margin-left: 40px;
+        margin-bottom: -30px;
+        font-weight: normal
+    }
+
     .direita {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: column;    
     }
 
     .direita > p {
         justify-content: center;
         align-items: center;
-        margin-top-bottom      
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .mask {
+        margin-top: 80px;
     }
 
     .Meio {
@@ -35,9 +58,15 @@
         padding: 25px;
     }
 
+    .quadrados-baixo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .img {
-        width: 220px;
-        height: 320px;
+        width: 120px;
+        height: 220px;
         background-color: #686767;
         margin: 20px;
     }
