@@ -46,6 +46,13 @@
         font-size: 20px;
         color: #000000;
         text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    .nível > p:hover {
+        color: #1e6a81;
+        font-size: 20.5px;
+        cursor: pointer;
     }
 
     .text-nvl {
@@ -81,12 +88,26 @@
         margin-top: -10px;
     }
 
-    .cont-user > h6 {
+    .c-t {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .c-t > h6 {
         font-size: 20px;
         font-family: 'Montserrat';
         font-weight: 300;
         margin-top: -10px;
+        transition: 0.3s;
     }
+
+    .c-t > h6:hover {
+        color: #2394B8;
+        text-decoration: underline;
+        font-size: 20.5px;
+        font-weight: 400;
+        cursor: pointer;
+    } 
 
     .conta-img {
         position: absolute;
@@ -99,4 +120,68 @@
         right: 453px;
     }
 
+    .quadrinhos {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 900px;
+    }
+
+    .quadrinho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 45px;
+        padding: 5px 30px;
+    }
+
+    .icon {
+        width: 101px;
+        height: 101px;
+        margin-right: 20px;
+    }
+
+    .cont-qtext {
+        display: flex;
+        flex-direction: column;
+        width: 500000px;
+    }
+
+    .cont-qtext > h1 {
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .cont-qtext > p {
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .seta1 {
+        height: 60px;
+        width: 38px;
+        margin-left: 750px;
+    }
+
+    .seta2 {
+        height: 60px;
+        width: 38px;
+        margin-left: 560px;
+    }
+
+    .seta3 {
+        height: 60px;
+        width: 38px;
+        margin-left: 710px;
+    }
+
+    .seta4 {
+        height: 60px;
+        width: 38px;
+        margin-left: 290px;
+    }
 }

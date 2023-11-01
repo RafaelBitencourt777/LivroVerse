@@ -51,7 +51,11 @@ export default function Conta() {
 
                         <h3>Crie sua conta</h3>
 
-                        <h6>Clique aqui</h6>
+                        <a className='c-t' href='/logincliente'>
+
+                            <h6>Clique aqui</h6>
+
+                        </a>
 
                     </div>
 
@@ -61,7 +65,7 @@ export default function Conta() {
 
                     <div className='quadrinho'>
 
-                        <img src={assinatura} alt='' />
+                        <img className='icon' src={assinatura} alt='' />
 
                         <div className='cont-qtext'>
 
@@ -71,13 +75,13 @@ export default function Conta() {
 
                         </div>
 
-                        <img src={seta} alt='' />
+                        <img className='seta1' src={seta} alt='' />
 
                     </div>
 
                     <div className='quadrinho'>
 
-                        <img src={seguraça} alt='' />
+                        <img className='icon' src={seguraça} alt='' />
 
                         <div className='cont-qtext'>
 
@@ -87,13 +91,13 @@ export default function Conta() {
 
                         </div>
 
-                        <img src={seta} alt='' />
+                        <img className='seta2' src={seta} alt='' />
 
                     </div>
 
                     <div className='quadrinho'>
 
-                        <img src={endereco} alt='' />
+                        <img className='icon' src={endereco} alt='' />
 
                         <div className='cont-qtext'>
 
@@ -103,13 +107,13 @@ export default function Conta() {
 
                         </div>
 
-                        <img src={seta} alt='' />
+                        <img className='seta3' src={seta} alt='' />
 
                     </div>
 
                     <div className='quadrinho'>
 
-                        <img src={livro} alt='' />
+                        <img className='icon' src={livro} alt='' />
 
                         <div className='cont-qtext'>
 
@@ -119,7 +123,7 @@ export default function Conta() {
 
                         </div>
 
-                        <img src={seta} alt='' />
+                        <img className='seta4' src={seta} alt='' />
 
                     </div>
 
