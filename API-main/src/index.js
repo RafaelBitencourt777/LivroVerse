@@ -15,5 +15,5 @@ servidor.use(admEndpoints);
 servidor.use(clienteEndpoints); 
 servidor.use(produtoEndpoints); 
 
-servidor.listen(process.env.PORT, () => console.log('API SUBIU!!!! AEEEEEEEEEE'));
+servidor.listen(process.env.MYSQL_PORT, () => console.log('API SUBIU!!!! AEEEEEEEEEE'));
 
