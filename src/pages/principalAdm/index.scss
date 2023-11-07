@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&display=swap');
+
+.PrincAdm {
+    display: flex;
+    flex-direction: row;
+
+    .adm-esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 50px;
+    }
+
+    .adm-ecima {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adm-ecima > img {
+        width: 134px;
+        height: 134px;
+    }
+
+    .adm-ecima > p {
+        font-size: 32px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    .adm-ebaixo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adm-ebaixo > button {
+        background-color: #073EFF;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        height: 50px;
+        width: 354px;
+        margin: 15px 0px;
+        transition: 0.3s;
+    }
+
+    .adm-ebaixo > button:hover {
+        cursor: pointer;
+        background-color: #5277ff;
+    }
+
+    .adm-direita {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adm-dcima {
+        height: 235px;
+        background-color: #E7E7E7;
+        width: 806px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adm-dcima > img {
+        width: 600px;
+        height: auto;
+    }
+
+    .adm-dbaixo {
+        background: rgb(26,127,159);
+        background: linear-gradient(180deg, rgba(26,127,159,1) 17%, rgba(97,175,200,1) 90%);
+        padding: 20px;
+        padding-left: 35px;
+    }
+
+    .dois-quad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .adm-quadrado {
+        background-color: #fff;
+        width: 300px;
+        height: 251px;
+        border-radius: 20px;
+        margin-right: 30px;
+        margin-top: 30px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .adm-quadrado:hover {
+        cursor: pointer;
+        width: 305px;
+        height: 256px;
+    }
+
+    .adm-quadrado > h2 {
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    .adm-quadrado > img {
+        width: 132px;
+        height: 132px;
+        margin-left: 150px;
+    }
+}
