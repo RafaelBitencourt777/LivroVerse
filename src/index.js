@@ -20,7 +20,8 @@ import Pgto from './pages/frmspgto/pgto.js';
 import ConfirmPed from './pages/confirmPedido';
 import MyPed from './pages/mypedidos/my.js';
 import Conta from './pages/areaconta/area.js';
-import PrincAdm from './pages/principalAdm'
+import PrincAdm from './pages/principalAdm';
+import CadastrarProd from './pages/cadastrarProd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -44,6 +45,7 @@ root.render(
         <Route path='/meus-pedidos' element={<MyPed />} />
         <Route path='/conta' element={<Conta />} />
         <Route path='/adm' element={<PrincAdm />} />
+        <Route path='/cadastrar-produto' element={<CadastrarProd />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
