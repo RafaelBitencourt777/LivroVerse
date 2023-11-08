@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Mandali&family=Martel+Sans:wght@700&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Mandali&family=Martel+Sans:wght@700&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
 .Ped {
     display: flex;
     flex-direction: column;
@@ -8,6 +11,7 @@
         width: 300px;
         display: flex;
         flex-direction: row;
+        border-radius: 20px;
     }
 
     .quadrados-cima{
@@ -20,13 +24,15 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-weight: normal
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .eanda{
         margin-left: 40px;
         margin-bottom: -30px;
-        font-weight: normal
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .direita {
@@ -37,8 +43,10 @@
     .direita > p {
         justify-content: center;
         align-items: center;
+        align-items: center; 
         text-align: center;
         font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .mask {
@@ -68,6 +76,6 @@
         width: 120px;
         height: 220px;
         background-color: #686767;
-        margin: 20px;
+        margin: 18px;
     }
 }
