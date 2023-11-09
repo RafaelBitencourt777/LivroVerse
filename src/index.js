@@ -22,6 +22,7 @@ import MyPed from './pages/mypedidos/my.js';
 import Conta from './pages/areaconta/area.js';
 import PrincAdm from './pages/principalAdm';
 import CadastrarProd from './pages/cadastrarProd';
+import Dtc from './pages/dadoscliente/dtc';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -46,6 +47,7 @@ root.render(
         <Route path='/conta' element={<Conta />} />
         <Route path='/adm' element={<PrincAdm />} />
         <Route path='/cadastrar-produto' element={<CadastrarProd />} />
+        <Route path='/dados-do-cliente' element={<Dtc />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
