@@ -8,7 +8,7 @@ export default function CadastrarProd() {
 
         <div className='CadastrarProd'>
 
-            <img src={user} alt='' />
+            <img className='cad-user' src={user} alt='' />
 
             <div className='cadp-quad'>
 
@@ -16,9 +16,9 @@ export default function CadastrarProd() {
 
                 <div className='inps1'>
 
-                    <input type='text' placeholder='Nome do Produto'></input>
+                    <input className='Cad-name' type='text' placeholder='Nome do Produto'></input>
 
-                    <input type='number' placeholder='Quantidade'></input>
+                    <input className='Cad-quant' type='number' placeholder='Quantidade'></input>
 
                 </div>
 
