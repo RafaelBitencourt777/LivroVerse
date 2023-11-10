@@ -11,46 +11,6 @@ const {
 
 const endpoints = Router();
 
-endpoints.post('/produto/cadastrar', async (req, resp) => {
-  try {
-    const {
-      id_categoria,
-      id_avaliacao,
-      nm_produto,
-      vl_preco_fis,
-      ds_desc,
-      vl_preco_pdf,
-      vl_preco_kindle,
-      vl_preco_promocional,
-      bt_destaque,
-      bt_promocao,
-      bt_disponivel,
-      qtd_estoque,
-      bl_favorito,
-    } = req.body;
-
-    await cadastrarProduto({
-      id_categoria,
-      id_avaliacao,
-      nm_produto,
-      vl_preco_fis,
-      ds_desc,
-      vl_preco_pdf,
-      vl_preco_kindle,
-      vl_preco_promocional,
-      bt_destaque,
-      bt_promocao,
-      bt_disponivel,
-      qtd_estoque,
-      bl_favorito,
-    });
-
-    resp.status(201).send('Produto cadastrado com sucesso.');
-  } catch (error) {
-    resp.status(500).send({ erro: 'Ocorreu um erro ao cadastrar o produto: ' + error.message });
-  }
-});
-
 endpoints.put('/produto/alterar/:id', async (req, resp) => {
   try {
     const { id } = req.params;
