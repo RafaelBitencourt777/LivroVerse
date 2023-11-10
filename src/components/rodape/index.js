@@ -34,7 +34,7 @@ export default function Rodape() {
                 <div class="centro">
                     <img src={logor} alt=""/>
 
-                    <h8>LivroVerse © - Todos os direitos reservados</h8>
+                    <h8 className="agaoitocent" >LivroVerse © - Todos os direitos reservados</h8>
                 </div>
 
                 <div class="direita">
@@ -47,7 +47,7 @@ export default function Rodape() {
 
             </div>
             <div className="baixo">
-                <h8>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</h8>
+                <h8 className="formaspgto">Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</h8>
             </div>
         </div>  
     );
