@@ -15,15 +15,15 @@
 
     .cadp-quad {
         width: 842px;
-        height: 721px;
+        height: 731px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
         align-self: center;
         justify-self: center;
-        padding: 20px;
+        padding: 15px;
         border-radius: 20px;
-        margin-top: -20px;
+        margin-top: -40px;
         align-items: center;
         justify-content: space-around;
     }
@@ -33,6 +33,15 @@
         font-size: 45px;
         font-family: 'Montserrat';
         font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    input {
+        border: none;
+        border-radius: 20px;
+        background-color: #D9D9D9;
+        padding: 20px;
     }
 
     .inps1 {
@@ -42,8 +51,108 @@
     }
 
     .Cad-name {
-        width: 570px;
-        height: 50px;
+        width: 500px;
+        height: 30px;
         margin-right: 20px;
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+    .Cad-quant {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 200px;
+    }
+
+    .Cad-cod {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 200;
+        margin-right: 20px;
+    }
+
+    .Cad-est {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .Cad-preco {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 150px;
+    }
+
+    .inps3 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .Cad-desc {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 400px;
+        margin-right: 20px;
+        height: 300px;
+    }
+
+    .inp-pe {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .Cad-gen {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .Cad-img {
+        color: #3f3f3f;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        width: 300px;
+        height: 210px;
+    }
+
+    .inp-pe > img {
+        position: absolute;
+    }
+
+    button {
+        border: none;
+        border-radius: 20px;
+        background-color: #0066FF;
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        padding: 20px;
+        width: 600px;
+        transition: 0.8s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #4b93ff;
     }
 }

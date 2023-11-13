@@ -1,6 +1,7 @@
 import './index.scss';
 
 import user from '../../assets/img/useradm.png';
+import up from '../../assets/img/cadastrar-img.png';
 
 export default function CadastrarProd() {
 
@@ -16,32 +17,34 @@ export default function CadastrarProd() {
 
                 <div className='inps1'>
 
-                    <input className='Cad-name' type='text' placeholder='Nome do Produto'></input>
+                    <input className='Cad-name' type='text' placeholder='Nome do Produto'/>
 
-                    <input className='Cad-quant' type='number' placeholder='Quantidade'></input>
+                    <input className='Cad-quant' type='number' placeholder='Quantidade'/>
 
                 </div>
 
                 <div className='inps2'>
 
-                    <input type='number' placeholder='Código'></input>
+                    <input className='Cad-cod' type='number' placeholder='Código'/>
 
-                    <input type='number' placeholder='Estoque'></input>
+                    <input className='Cad-est' type='number' placeholder='Estoque'/>
 
-                    <input type='number' placeholder='Preço'></input>
+                    <input className='Cad-preco' type='number' placeholder='Preço'/>
 
                 </div>
 
                 <div className='inps3'>
 
-                    <input type='text' placeholder='Descrição do Produto'></input>
+                    <input className='Cad-desc' type='text' placeholder='Descrição do Produto'/>
 
                     <div className='inp-pe'>
 
-                        <input type='text' placeholder='Gênero do Produto'></input>
+                        <input className='Cad-gen' type='text' placeholder='Gênero do Produto'/>
 
-                        <input placeholder='Imagem do Produto'></input>
-
+                        <input className='Cad-img' placeholder='Imagem do Produto'/>
+                        
+                        <img src={up} alt=''/>
+                        
                     </div>
 
                 </div>
