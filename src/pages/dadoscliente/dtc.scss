@@ -2,10 +2,37 @@
     .BlueCenter{
         background-color: #2394B8;
         height: 200vh;
+        display: flex;
+        flex-direction: row;
 
-        input {
-            height: 20px;
-            background-color: #fff;
+        .inputsdir{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 800px
+        }
+
+        .classif{
+            margin-left: 23px;
+        }
+
+        .inpu {
+            width: 330px;
+            height: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .livrosbrutos{
+            height: 500px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+            margin-left: 200px;
         }
     }
 }
