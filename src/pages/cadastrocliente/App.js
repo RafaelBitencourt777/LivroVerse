@@ -80,7 +80,7 @@ function Cadastrocliente() {
         <button className="button-criar" onClick={handleCadastro}>
           Criar
         </button>
-        <div className="mensagem">{mensagem}</div>
+        <div className="mensagem">{}</div>
       </div>
       
       <div className="termos">
