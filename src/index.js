@@ -23,6 +23,7 @@ import Conta from './pages/areaconta/area.js';
 import PrincAdm from './pages/principalAdm';
 import CadastrarProd from './pages/cadastrarProd';
 import Dtc from './pages/dadoscliente/dtc';
+import CabecalhoAdm from './components/cabecalhoAdm/index.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,6 +49,7 @@ root.render(
         <Route path='/adm' element={<PrincAdm />} />
         <Route path='/cadastrar-produto' element={<CadastrarProd />} />
         <Route path='/dados-do-cliente' element={<Dtc />} />
+        <Route path='/cabecalho-adm' element={<CabecalhoAdm />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

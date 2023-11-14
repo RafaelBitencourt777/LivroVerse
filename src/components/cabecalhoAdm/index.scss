@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.CabecalhoAdm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 10vh;
+    box-shadow: -3px 3px 20px 12px rgba(0,0,0,.2);
+
+    .cabadm-esq {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabadm-esq > img {
+        height: 75px;
+        width: 75px;
+        margin-right: 20px;
+    }
+
+    .cabadm-esq > h2 {
+        font-size: 32px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+    .cabadm-dir > img {
+        width: 345px;
+        height: 98px;
+    }
+}
