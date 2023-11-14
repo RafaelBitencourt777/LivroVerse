@@ -18,7 +18,7 @@ function Cadastrocliente() {
         ds_senha: senha,
       });
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         toast.success('Cliente cadastrado com sucesso.'); 
       } else {
         toast.error('Ocorreu um erro ao cadastrar o cliente.'); 
