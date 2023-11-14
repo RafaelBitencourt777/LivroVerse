@@ -29,7 +29,11 @@ export default function PrincAdm() {
 
                     <button>Produtos</button>
 
-                    <button>Adicionar Produtos</button>
+                    <a href='/cadastrar-produto'>
+
+                        <button>Adicionar Produtos</button>
+                    
+                    </a>
 
                     <button>Usuários</button>
 

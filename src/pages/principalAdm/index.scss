@@ -48,6 +48,25 @@
         transition: 0.3s;
     }
 
+    a > button {
+        background-color: #073EFF;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        height: 50px;
+        width: 354px;
+        margin: 15px 0px;
+        transition: 0.3s;
+    }
+
+    a > button:hover {
+        cursor: pointer;
+        background-color: #5277ff;
+    }
+
     .adm-ebaixo > button:hover {
         cursor: pointer;
         background-color: #5277ff;
