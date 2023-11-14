@@ -1,5 +1,7 @@
 import './App.scss';
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import fundolivros from '../../assets/img/fundolivros.png';
 import axios from 'axios';
 
@@ -19,11 +21,14 @@ function Cadastrocliente() {
 
       if (response.status === 201) {
         setMensagem('Cliente cadastrado com sucesso.');
+        toast.success('Cliente cadastrado com sucesso.');
       } else {
         setMensagem('Ocorreu um erro ao cadastrar o cliente.');
+        toast.error('Ocorreu um erro ao cadastrar o cliente.');
       }
     } catch (error) {
       console.error('Erro ao fazer a solicitação:', error);
+      toast.error('Erro ao fazer a solicitação.');
     }
   };
 
@@ -43,37 +48,7 @@ function Cadastrocliente() {
             />
           </div>
 
-          <div className='input'>
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-
-          <div className='input'>
-            <label htmlFor="confirmarEmail">Confirme o Email</label>
-            <input type="text" id="confirmarEmail" placeholder="Confirmar Email" />
-          </div>
-
-          <div className='input'>
-            <label htmlFor="senha">Senha</label>
-            <input
-              type="password"
-              id="senha"
-              placeholder="Senha"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-            />
-          </div>
-
-          <div className='input'>
-            <label htmlFor="confirmarSenha">Confirmar Senha</label>
-            <input type="password" id="confirmarSenha" placeholder="Confirmar Senha"/>
-          </div>
+          {}
 
           <button className="button-criar" onClick={handleCadastro}>
             Criar
@@ -86,6 +61,7 @@ function Cadastrocliente() {
           <label htmlFor="termosCheckbox">Li e aceito os termos de uso e os termos de privacidade</label>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
