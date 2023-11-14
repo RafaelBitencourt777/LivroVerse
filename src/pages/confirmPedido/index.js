@@ -20,9 +20,6 @@ export default function ConfirmPed() {
         }
         setCep(value);
     };
-
-    const [n, setN] = useState(1);
-
     
 
     return (

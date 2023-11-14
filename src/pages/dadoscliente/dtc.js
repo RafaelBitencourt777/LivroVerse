@@ -6,13 +6,18 @@ import './dtc.scss';
 
 
 export default function Dtc() {
-  const [CEP, setCep] = useState('');
-  const handleCepChange = (e) => {
-    const inputValue = e.target.value.replace(/\D/g, ''); 
-    const formattedCep = inputValue.replace(/^(\d{5})(\d{3})$/, '$1-$2'); 
-    if (formattedCep.length <= 9) {
-      setCep(formattedCep);
-    }
+  const [cep, setCep] = useState('');
+
+  const handleCepChange = (event) => {
+      let value = event.target.value;
+      value = value.replace(/\D/g, ''); 
+      if (value.length > 8) {
+          value = value.substr(0, 8); 
+      }
+      if (value.length > 5) {
+          value = `${value.substr(0, 5)}-${value.substr(5, 3)}`; 
+      }
+      setCep(value);
   };
   const [logradouro, setLogradouro] = useState('');
   const [numero, setNumero] = useState('');
@@ -55,7 +60,7 @@ export default function Dtc() {
             type='text'
             id='cep'
             placeholder='CEP'
-            value={CEP}
+            value={cep}
             onChange={handleCepChange}
           />
             <p onMouseEnter={() => setIsHovered(true)}
