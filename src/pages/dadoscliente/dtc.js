@@ -4,8 +4,16 @@ import Rodape from '../../components/rodape';
 import botaolivros from '../../assets/img/googleplaylivrosKKKK.png';
 import './dtc.scss';
 
+
 export default function Dtc() {
   const [CEP, setCep] = useState('');
+  const handleCepChange = (e) => {
+    const inputValue = e.target.value.replace(/\D/g, ''); 
+    const formattedCep = inputValue.replace(/^(\d{5})(\d{3})$/, '$1-$2'); 
+    if (formattedCep.length <= 9) {
+      setCep(formattedCep);
+    }
+  };
   const [logradouro, setLogradouro] = useState('');
   const [numero, setNumero] = useState('');
   const [Complemento, setComplemento] = useState('');
@@ -13,43 +21,55 @@ export default function Dtc() {
   const [Bairro, setBairro] = useState('');
   const [city, setCity] = useState('');
   const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const handleNumeroChange = (e) => {
+    const inputValue = e.target.value;
+    if (inputValue.length <= 5) {
+      setNumero(inputValue);
+    }
+
+    
+  };
 
   return (
     <div className='agrupado'>
       <Cabecalho />
       <div className='BlueCenter'>
         <div className='inputsdir'>
-          <p className='classif'>
+          <p onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif' >
             CEP
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip' ><b> CAMPO OBRIGATÓRIO</b></span>
             )}
           </p>
           <input
             className='inpu'
-            type='number'
+            type='text'
             id='cep'
             placeholder='CEP'
             value={CEP}
-            onChange={(e) => setCep(e.target.value)}
+            onChange={handleCepChange}
           />
-            <p className='classif'>Logradouro*
+            <p onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif' >
+              Logradouro
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip'><b> CAMPO OBRIGATÓRIO</b></span>
             )}
             </p>
             <input
@@ -60,38 +80,43 @@ export default function Dtc() {
                   value={logradouro}
                   onChange={(e) => setLogradouro(e.target.value)}
                 />
-            <p className='classif'>
+            <p
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className='classif'
+          >
+            Número
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
+              onMouseOver={() => setTooltipVisible(true)}
+              onMouseOut={() => setTooltipVisible(false)}
+            >
+              *
+            </span>
+            {tooltipVisible && <span className='tooltip'><b> CAMPO OBRIGATÓRIO</b></span>}
+          </p>
+          <input
+            className='inpu'
+            type='number'
+            id='numero'
+            placeholder='Número'
+            value={numero}
+            onChange={handleNumeroChange}
+          />
+            <p onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif'>
+            Complemento
+            <span
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip'><b> CAMPO OBRIGATÓRIO</b></span>
             )}
-              Número*</p>
-            <input
-                  className='inpu'  
-                  type="number"
-                  id="numero"
-                  placeholder="Número"
-                  value={numero}
-                  onChange={(e) => setNumero(e.target.value)}
-                />
-            <p className='classif'>
-            <span
-              className='tooltip-trigger'
-              onMouseOver={() => setTooltipVisible(true)}
-              onMouseOut={() => setTooltipVisible(false)}
-            >
-              *
-            </span>
-            {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
-            )}
-              Complemento*</p>
+            </p>
             <input
                   className='inpu'
                   type="text"
@@ -100,18 +125,20 @@ export default function Dtc() {
                   value={Complemento}
                   onChange={(e) => setComplemento(e.target.value)}
                 />
-            <p className='classif'>
+            <p onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif'>
+            Referência
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip'><b> CAMPO OBRIGATÓRIO</b></span>
             )}
-              Referência*</p>
+            </p>
             <input
                   className='inpu'
                   type="text"
@@ -120,18 +147,20 @@ export default function Dtc() {
                   value={referencia}
                   onChange={(e) => setReferencia(e.target.value)}
                 />
-            <p className='classif'>
+            <p onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif'>
+            Bairro
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip'><b> CAMPO OBRIGATÓRIO</b></span>
             )}
-              Bairro*</p>
+            </p>
             <input
                   className='inpu'
                   type="text"
@@ -140,18 +169,20 @@ export default function Dtc() {
                   value={Bairro}
                   onChange={(e) => setBairro(e.target.value)}
                 />
-            <p className='classif'>
+            <p  onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)} className='classif'>
+            Cidade
             <span
-              className='tooltip-trigger'
+              className={`tooltip-trigger ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setTooltipVisible(true)}
               onMouseOut={() => setTooltipVisible(false)}
             >
               *
             </span>
             {tooltipVisible && (
-              <span className='tooltip'>Campo obrigatório</span>
+              <span className='tooltip' ><b> CAMPO OBRIGATÓRIO</b></span>
             )}
-              Cidade*</p>
+            </p>
             <input
                   className='inpu'
                   type="text"
@@ -167,3 +198,4 @@ export default function Dtc() {
         </div>
   )
 }
+
