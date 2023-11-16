@@ -114,7 +114,7 @@ export default function AcompPedido(){
 
                                     <hr></hr>
 
-                                    <p>20/05</p>
+                                    <p>xx/xx</p>
 
                                 </div>
 
@@ -128,7 +128,7 @@ export default function AcompPedido(){
 
                                     <hr></hr>
 
-                                    <p>21/05</p>
+                                    <p>xx/xx</p>
 
                                 </div>
 
@@ -142,7 +142,7 @@ export default function AcompPedido(){
 
                                     <hr></hr>
 
-                                    <p>24/05</p>
+                                    <p>xx/xx</p>
 
                                 </div>
 
@@ -156,7 +156,7 @@ export default function AcompPedido(){
 
                                     <hr></hr>
 
-                                    <p>26/05</p>
+                                    <p>xx/xx</p>
 
                                 </div>
 
@@ -170,7 +170,7 @@ export default function AcompPedido(){
 
                                     <hr></hr>
 
-                                    <p>29/05</p>
+                                    <p>xx/xx</p>
 
                                 </div>
 

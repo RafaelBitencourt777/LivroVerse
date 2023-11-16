@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Montserrat:wght@500&display=swap');
+//font-family: 'Alata', sans-serif;
+//font-family: 'Inter', sans-serif;
+//font-family: 'Montserrat', sans-serif;
 .agrupado{
     .BlueCenter{
         background-color: #2394B8;
-        height: 200vh;
+        height: 100vh;
         display: flex;
         flex-direction: row;
 
@@ -9,20 +13,25 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-bottom: 800px
+            margin-bottom: -70px;
+            margin-left: 20px;
         }
 
         .classif{
             margin-left: 23px;
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 5px
         }
 
         .inpu {
             width: 330px;
-            height: 30px;
+            height: 40px;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
             margin-left: 20px;
+            border: none;
         }
 
         .livrosbrutos{
@@ -34,5 +43,16 @@
             margin-top: 250px;
             margin-left: 200px;
         }
+
+        .tooltip{
+            color: #FFF;
+        }
+
+        .hovered {
+            font-weight: bold;
+          }
+
+        
+
     }
 }
