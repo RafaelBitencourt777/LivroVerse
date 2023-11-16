@@ -20,7 +20,8 @@ function Cadastrocliente() {
         ds_email: email,
         ds_senha: senha,
         ds_cpf: cpf,
-
+        id_assinatura: assinatura,
+        ds_telefone: telefone
       });
 
       if (response.status === 200) {
