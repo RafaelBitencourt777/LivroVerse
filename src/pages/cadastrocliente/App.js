@@ -10,7 +10,7 @@ function Cadastrocliente() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [cpf , setCpf] = useState('');
-  const [assinatura ,setassinatura]= useState('');
+  const [assinatura ,setassinatura]= useState(5);
   const [telefone, setTelefone] = useState('');
 
   const handleCadastro = async () => {
