@@ -21,7 +21,7 @@ export async function inserirCliente(cliente) {
         // Cria uma consulta SQL para inserir o cliente com a assinatura.
         const sql = `INSERT INTO TB_Cliente
             (id_assinatura, nm_cliente, ds_telefone, ds_email, ds_cpf, ds_senha)
-            VALUES (?, ?, ?, ?, ?, ?)`;
+            VALUES (5, ?, ?, ?, ?, ?)`;
 
         // Executa a consulta e insere o cliente no banco de dados.
         const resp = await conexao.query(sql, [
