@@ -9,6 +9,9 @@ function Cadastrocliente() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [cpf , setCpf] = useState('');
+  const [assinatura ,setassinatura]= useState('');
+  const [telefone, setTelefone] = useState('');
 
   const handleCadastro = async () => {
     try {
@@ -16,6 +19,9 @@ function Cadastrocliente() {
         nm_cliente: nome,
         ds_email: email,
         ds_senha: senha,
+        ds_cpf: cpf,
+        id_assinatura: assinatura,
+        ds_telefone: telefone
       });
 
       if (response.status === 200) {
@@ -57,25 +63,47 @@ function Cadastrocliente() {
         </div>
 
         <div className='input'>
-          <label htmlFor="confirmarEmail">Confirme o Email</label>
-          <input type="text" id="confirmarEmail" placeholder="Confirmar Email" />
-        </div>
-
-        <div className='input'>
-          <label htmlFor="senha">Senha</label>
+          <label htmlFor="cpf">CPF</label>
           <input
-            type="password"
-            id="senha"
-            placeholder="Senha"
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
+            type="text"
+            id="cpf"
+            placeholder="Digite seu CPF"
+            value={cpf}
+            onChange={(e) => setCpf(e.target.value)}
           />
-        </div>
+      </div>
 
-        <div className='input'>
-          <label htmlFor="confirmarSenha">Confirmar Senha</label>
-          <input type="password" id="confirmarSenha" placeholder="Confirmar Senha"/>
-        </div>
+      <div className='input'>
+        <label htmlFor="senha">Senha</label>
+        <input
+          type="password"
+          id="senha"
+          placeholder="Senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+        />
+      </div>
+
+      <div className='input'>
+        <label htmlFor="confirmarCadastro">Confirmar Cadastro</label>
+        <input
+          type="text"
+          id="confirmarCadastro"
+          placeholder="Digite o número 5 para confirmar o cadastro"
+          value={assinatura}
+          onChange={(e) => setassinatura(e.target.value)}
+        />
+      </div>
+      <div className='input'>
+        <label htmlFor="telefone">Telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          placeholder="Digite seu número de telefone"
+          value={telefone}
+          onChange={(e) => setTelefone(e.target.value)}
+        />
+      </div>
 
         <button className="button-criar" onClick={handleCadastro}>
           Criar
