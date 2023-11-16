@@ -87,9 +87,9 @@ function Cadastrocliente() {
       <div className='input'>
         <label htmlFor="confirmarCadastro">Confirmar Cadastro</label>
         <input
-          type="number"
+          type="text"
           id="confirmarCadastro"
-          placeholder="Digite o número 0 para confirmar o cadastro"
+          placeholder="Digite o número 5 para confirmar o cadastro"
           value={assinatura}
           onChange={(e) => setassinatura(e.target.value)}
         />
