@@ -14,9 +14,11 @@ export async function inserirCliente(cliente) {
         }
 
         // Verifica se o campo id_assinatura está presente e é um número válido.
-        if (typeof cliente.id_assinatura !== 'number' || cliente.id_assinatura <= 0) {
-            throw new Error('ID de assinatura inválido.');
+        if (!cliente.id_assinatura || !/^\d+$/.test(cliente.id_assinatura)) {
+            throw new Error('ID de assinatura inválido. Verifique o valor inserido.');
         }
+        
+        
 
         // Cria uma consulta SQL para inserir o cliente com a assinatura.
         const sql = `INSERT INTO TB_Cliente
