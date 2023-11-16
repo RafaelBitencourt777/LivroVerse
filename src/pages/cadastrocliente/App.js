@@ -10,7 +10,7 @@ function Cadastrocliente() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [cpf , setCpf] = useState('');
-  const [assinatura ,setassinatura]= useState(5);
+  const assinatura= 5 ;
   const [telefone, setTelefone] = useState('');
 
   const handleCadastro = async () => {
@@ -84,16 +84,6 @@ function Cadastrocliente() {
         />
       </div>
 
-      <div className='input'>
-        <label htmlFor="confirmarCadastro">Confirmar Cadastro</label>
-        <input
-          type="text"
-          id="confirmarCadastro"
-          placeholder="Digite o número 5 para confirmar o cadastro"
-          value={assinatura}
-          onChange={(e) => setassinatura(e.target.value)}
-        />
-      </div>
       <div className='input'>
         <label htmlFor="telefone">Telefone</label>
         <input
