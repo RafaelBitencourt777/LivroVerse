@@ -39,7 +39,7 @@ export default function Rodape() {
 
                 <div class="direita">
                     <h2>
-                        Política de Vendas, Trocas e Privacidade<br/>
+                        Política de Vendas, Trocas e Privacidade
                         Termos e condições de compra<br/>
                         Fale conosco
                     </h2>

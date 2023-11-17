@@ -5,15 +5,15 @@
 .Rodape {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     background-color: #004156;
-    height: 55vh;
+    height: 29vh;
 
     .cima {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
 
     .esquerda {
@@ -23,26 +23,27 @@
 
     .esquerda > h3 {
         font-family: 'Martel Sans';
-        font-size: 32px;
+        font-size: 20px;
         color: #FFF;
+        margin-bottom: 15px;
     }
 
     .rs {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 80px;
+        height: 30px;
     }
 
     .rs > img {
-        width: 37px;
-        height: 37px;
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
     }
 
     .rs > p {
         font-family: 'Mandali';
-        font-size: 30px;
+        font-size: 18px !important;
         color: #FFF;
     }
 
@@ -52,19 +53,22 @@
         justify-content: flex-end;
         align-items: center;
         margin-left: -60px;
+        margin-top: 30px;
     }
 
     .centro > img {
-        width: 180px;
-        height: 160px;
+        width: 130px;
+        height: 110px;
+        margin-right: -60px;
+        margin-top: -30px;
     }
 
     .centro > h8 {
         font-family: 'Montserrat';
-        font-size: 20px;
+        font-size: 15px;
         color: #577883;
-        margin-top: 155px;
-        margin-bottom: -15px;
+        margin-top: 65px;
+        margin-right: -70px;
     }
 
     .direita {
@@ -72,13 +76,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 350px;
     }
 
     .direita > h2 {
         color: #FFF;
-        font-family: 'Mandali';
-        font-size: 24px;
-        text-align: center;
+        font-family: 'Martel Sans';
+        font-size: 15px;
+        text-align: left;
     }
 
     .baixo {
@@ -90,7 +95,7 @@
 
     .baixo > h8 {
         font-family: 'Mandali';
-        font-size: 24px;
+        font-size: 15px !important;
         color: #577883;
         text-align: center;
     }

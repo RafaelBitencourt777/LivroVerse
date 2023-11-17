@@ -24,6 +24,9 @@ import PrincAdm from './pages/principalAdm';
 import CadastrarProd from './pages/cadastrarProd';
 import Dtc from './pages/dadoscliente/dtc';
 import CabecalhoAdm from './components/cabecalhoAdm/index.js';
+import Carrinho from './pages/carrinho';
+import DtlPedAnd from './pages/detalhesPedAndamento';
+import PedFin from './pages/pedidosFinalizada';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -50,6 +53,9 @@ root.render(
         <Route path='/cadastrar-produto' element={<CadastrarProd />} />
         <Route path='/dados-do-cliente' element={<Dtc />} />
         <Route path='/cabecalho-adm' element={<CabecalhoAdm />} />
+        <Route path='/carrinho' element={<Carrinho />} />
+        <Route path='/detalhes-pedidos-andamento' element={<DtlPedAnd/>} />
+        <Route path='/pedidos-finalizados' element={<PedFin/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

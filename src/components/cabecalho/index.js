@@ -48,7 +48,9 @@ function Cabecalho() {
         </div>
       </div>
       <div className='trilogia'>
-        <img src={carrinho} alt='' />
+        <Link to="/carrinho">
+          <img src={carrinho} alt='' />
+        </Link>
         <Link to="/favoritos" className="link-padrao">
           <img src={coracao} alt='' />
         </Link>

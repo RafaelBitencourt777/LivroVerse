@@ -1,5 +1,15 @@
 import conexao from "./connection.js"; 
 
+export async function alterarImagem(idFilme, novaImagem) {
+  try {
+    const comando = `UPDATE tb_produto_img SET img_produto   = ? WHERE id_produto = ?`;
+    const resposta = await con.query(comando, [novaImagem, idFilme]);
+    return resposta.affectedRows;
+  } catch (error) {
+    throw new Error(`Erro ao alterar a imagem do filme: ${error.message}`);
+  }
+}
+
 
 // Função para cadastrar um produto.
 async function cadastrarProduto(produto) {
@@ -75,4 +85,4 @@ async function pesquisarProdutos(pesquisa) {
   }
 }
 
-export default { cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
+export default { alterarImagem,cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
