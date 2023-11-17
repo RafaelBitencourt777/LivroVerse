@@ -1,31 +1,65 @@
+import React, { useState, useEffect } from 'react';
 import './landing.scss';
-
-import { useRef } from 'react';
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 import oftesq from '../../assets/img/oftesq.png';
 import oftdir from '../../assets/img/oftdir.png';
 import estrelas from '../../assets/img/estrelas5.png';
 import lesq from '../../assets/img/lesq.png';
-import ldir from '../../assets/img/ldir.png'; 
+import ldir from '../../assets/img/ldir.png';
+import ad1 from '../../assets/img/1banneroferta.png';
+import ad2 from '../../assets/img/2banneroferta.png';
+import ad3 from '../../assets/img/3banneroferta.png';
 
 function App() {
-  
+  const [currentAd, setCurrentAd] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
+    }, 5000); // Troca a cada 5 segundos, você pode ajustar o intervalo conforme necessário
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleArrowClick = (direction) => {
+    clearInterval(); // Limpa o intervalo ao clicar nas setas
+    if (direction === 'left') {
+      setCurrentAd(currentAd === 1 ? 3 : currentAd - 1);
+    } else {
+      setCurrentAd(currentAd === 3 ? 1 : currentAd + 1);
+    }
+  };
+
+  const handleIndicatorClick = (indicator) => {
+    clearInterval(); // Limpa o intervalo ao clicar nas bolinhas
+    setCurrentAd(indicator);
+  };
+
   return (
     <div className="App">
-      <Cabecalho/>
+      <Cabecalho />
 
       <div className="Centro">
-
         <div className="Ofertas">
           <div className="Ofertag">
-            <img className="esquerda-o" src={oftesq} alt=""/>
-            <img className="direita-o" src={oftdir} alt=""/>
+            <img alt='' className="ofertin" src={currentAd === 1 ? ad1 : currentAd === 2 ? ad2 : ad3} />
+            <img alt='' className="esquerda-o" src={oftesq} onClick={() => handleArrowClick('left')} />
+            <img alt='' className="direita-o" src={oftdir} onClick={() => handleArrowClick('right')} />
 
             <div className="bolinhas">
-              <div className="bolinha1"></div>
-              <div className="bolinha2"></div>
-              <div className="bolinha3"></div>
+              <div
+                className={`bolinha ${currentAd === 1 ? 'ativa' : ''}`}
+                onClick={() => handleIndicatorClick(1)}
+              ></div>
+              <div
+                className={`bolinha ${currentAd === 2 ? 'ativa' : ''}`}
+                onClick={() => handleIndicatorClick(2)}
+              ></div>
+              <div
+                className={`bolinha ${currentAd === 3 ? 'ativa' : ''}`}
+                onClick={() => handleIndicatorClick(3)}
+              ></div>
             </div>
           </div>
 
