@@ -13,7 +13,7 @@ import ad3 from '../../assets/img/3banneroferta.png';
 
 
 
-const apiUrl = '';
+const apiUrl = '/http://129.148.42.252:5018/';
 function App() {
   const [currentAd, setCurrentAd] = useState(1);
 
