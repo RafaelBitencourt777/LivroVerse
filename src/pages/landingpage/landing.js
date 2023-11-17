@@ -1,4 +1,6 @@
 import './landing.scss';
+
+import { useRef } from 'react';
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 import oftesq from '../../assets/img/oftesq.png';
@@ -8,6 +10,7 @@ import lesq from '../../assets/img/lesq.png';
 import ldir from '../../assets/img/ldir.png'; 
 
 function App() {
+  
   return (
     <div className="App">
       <Cabecalho/>
@@ -41,7 +44,7 @@ function App() {
           <h1>Mais Vendidos</h1>
 
           <div className="cards">
-            <img className="lesq" src={lesq} alt=""/>
+            <img className="lesq" src={lesq} alt="" />
 
             <div className="card">
 
@@ -119,7 +122,7 @@ function App() {
           <h1>Mais bem avaliados de: Romance</h1>
 
           <div className="cards">
-            <img className="lesq" src={lesq} alt=""/>
+            <img className="lesq" src={lesq} alt="" />
 
             <div className="card">
 
