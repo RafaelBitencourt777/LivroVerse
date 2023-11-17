@@ -1,5 +1,15 @@
 import conexao from "./connection.js"; 
 
+async function listarLivros() {
+  try {
+    const sql = 'SELECT * FROM tb_produto';
+    const [rows] = await conexao.query(sql);
+    return rows;
+  } catch (error) {
+    throw error;
+  }
+}
+
 export async function alterarImagem(idFilme, novaImagem) {
   try {
     const comando = `UPDATE tb_produto_img SET img_produto   = ? WHERE id_produto = ?`;
@@ -75,7 +85,7 @@ async function removerProdutoPorID(id) {
     throw error;
   }
 }
-async function pesquisarProdutos(pesquisa) {
+async function pesquisarLivros(pesquisa) {
   try {
     const sql = 'SELECT * FROM tb_produto WHERE nm_produto LIKE ?';
     const [rows] = await conexao.query(sql, [`%${pesquisa}%`]);
@@ -85,4 +95,5 @@ async function pesquisarProdutos(pesquisa) {
   }
 }
 
-export default { alterarImagem,cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
+
+export default { alterarImagem,listarLivros,cadastrarProduto, pesquisarLivros,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };

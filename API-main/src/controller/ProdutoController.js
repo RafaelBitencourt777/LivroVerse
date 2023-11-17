@@ -16,7 +16,7 @@ const {
 const endpoints = Router();
 const upload = multer({dest: 'storages/capaslivros'});
 
-endpoints.put('/livro/:id/livro', upload.single('capalivros'), async (req, resp) => {
+endpoints.put('/produto/:id/livro', upload.single('capalivros'), async (req, resp) => {
   try { 
       const {id}= req.params;
       const imagem = req.file.path;
@@ -167,3 +167,11 @@ endpoints.get('/produto/pesquisar', async (req, resp) => {
 
 export default endpoints;
 
+endpoints.get('/produtos', async (req, res) => {
+  try {
+    const livros = await listarLivros(); 
+    res.status(200).json(livros);
+  } catch (error) {
+    res.status(500).send({ erro: 'Ocorreu um erro ao listar os livros.' + error.message });
+  }
+});
