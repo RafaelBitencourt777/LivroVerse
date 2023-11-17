@@ -16,7 +16,7 @@ const {
 const endpoints = Router();
 const upload = multer({dest: 'storages/capaslivros'});
 
-endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
+endpoints.put('/livro/:id/livro', upload.single('capalivros'), async (req, resp) => {
   try { 
       const {id}= req.params;
       const imagem = req.file.path;
@@ -24,7 +24,7 @@ endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp
    const resultadoAlteracao = await alterarImagem(id, imagem);
 
     resp.status(200).send({
-      mensagem: 'Imagem do filme alterada com sucesso!',
+      mensagem: 'Imagem do livro alterada com sucesso!',
       resultado: resultadoAlteracao,
     });
   } catch (err) {
