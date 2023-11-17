@@ -16,6 +16,11 @@ export default function CadastrarProd() {
     genero: '',
   });
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setProduto({ ...produto, imagem: file });
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setProduto({ ...produto, [name]: value });
