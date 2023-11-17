@@ -23,7 +23,7 @@ function Cadastrocliente() {
         id_assinatura: assinatura,
         ds_telefone: telefone
       });
-
+      console.log(assinatura)
       if (response.status === 200) {
         toast.success('Cliente cadastrado com sucesso.'); 
       } else {
