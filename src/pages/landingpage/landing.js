@@ -41,7 +41,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Mais Vendidos</h1>
+          <h1>LivroVerse Black Week: Até 80% de desconto em vários livros</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
@@ -119,7 +119,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Mais bem avaliados de: Romance</h1>
+          <h1>Mais vendidos</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
@@ -353,7 +353,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Livros para comemorar o mês das crianças</h1>
+          <h1>Livros para te ajudar a refletir</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt=""/>
