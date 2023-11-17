@@ -27,9 +27,12 @@ CREATE TABLE tb_produto (
     bt_disponivel BOOLEAN,
     qtd_estoque INT,
     bl_favorito BOOLEAN,
+    nm_autor VARCHAR(255), 
+    dt_lancamento DATE, 
     FOREIGN KEY (id_categoria) REFERENCES tb_categoria(id_categoria),
     FOREIGN KEY (id_avaliacao) REFERENCES tb_avaliacao(id_avaliacao)
 );
+
 
 CREATE TABLE tb_produto_img (
     id_produto_img INT PRIMARY KEY AUTO_INCREMENT,
