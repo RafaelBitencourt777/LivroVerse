@@ -10,6 +10,7 @@ import voltar from '../../assets/img/setavoltar.png';
 import coracaoCurtido from '../../assets/img/corasao.png'; 
 import coracaoNaoCurtido from '../../assets/img/coracao2.png'; 
 import StarRating from '../avlstars/star';
+import Carrinho from '../../assets/img/carrinho.png'
 
 export default function Prev() {
     const [curtido, setCurtido] = useState(false);
@@ -26,9 +27,19 @@ export default function Prev() {
                 <div className='quad'>
                     <a href='./'><img className='volta' src={voltar} alt=''/></a>
                     <div className='imagem-texto'>
-                        
+                    <div className='car'>
                         <div className='img' alt='aqui seria a imagem do livro'></div>
-
+                        
+                        <a className='botaofeio' href='/carrinho'>
+                                    <button className='carro'>
+                                        <img src={Carrinho} alt=''/>
+                                        <div className='cartxt'>
+                                            <p>Inserir no carrinho</p>
+                                            <h5><b>(Apenas físico)</b></h5>
+                                        </div>
+                                    </button>
+                                </a>
+                        </div>
                         <div className='direita'>
                         <div className='titulo-e-heart'>
                          <div className='textos'>
