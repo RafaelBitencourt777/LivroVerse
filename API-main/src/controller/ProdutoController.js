@@ -1,7 +1,11 @@
 import { Router } from 'express';
 import produtoRepository from '../repository/produtoRepository.js';
+import multer from 'multer';
+
+
 
 const {
+  alterarImagem,
   cadastrarProduto,
   pesquisarProdutos,
   alterarProdutoPorID,
@@ -10,6 +14,26 @@ const {
 } = produtoRepository;
 
 const endpoints = Router();
+const upload = multer({dest: 'storages/capaslivros'});
+
+endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
+  try { 
+      const {id}= req.params;
+      const imagem = req.file.path;
+
+   const resultadoAlteracao = await alterarImagem(id, imagem);
+
+    resp.status(200).send({
+      mensagem: 'Imagem do filme alterada com sucesso!',
+      resultado: resultadoAlteracao,
+    });
+  } catch (err) {
+    resp.status(400).send({
+      erro: err.message,
+    });
+  }
+});
+
 
 endpoints.post('/produto/cadastrar', async (req, resp) => {
   try {
