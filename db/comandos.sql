@@ -1,5 +1,3 @@
--- Exemplo de inserção de categorias na tabela tb_categoria com IDs automáticos
-
 INSERT INTO tb_categoria (nm_categoria) VALUES
 ('Romance'),
 ('Mistério'),
