@@ -11,19 +11,21 @@ import ad1 from '../../assets/img/1banneroferta.png';
 import ad2 from '../../assets/img/2banneroferta.png';
 import ad3 from '../../assets/img/3banneroferta.png';
 
+
+
+const apiUrl = '';
 function App() {
   const [currentAd, setCurrentAd] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
-    }, 5000); // Troca a cada 5 segundos, você pode ajustar o intervalo conforme necessário
-
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   const handleArrowClick = (direction) => {
-    clearInterval(); // Limpa o intervalo ao clicar nas setas
+    clearInterval();
     if (direction === 'left') {
       setCurrentAd(currentAd === 1 ? 3 : currentAd - 1);
     } else {
@@ -32,7 +34,7 @@ function App() {
   };
 
   const handleIndicatorClick = (indicator) => {
-    clearInterval(); // Limpa o intervalo ao clicar nas bolinhas
+    clearInterval(); 
     setCurrentAd(indicator);
   };
 
