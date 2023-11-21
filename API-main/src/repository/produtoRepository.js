@@ -85,4 +85,23 @@ async function pesquisarProdutos(pesquisa) {
   }
 }
 
-export default { alterarImagem,cadastrarProduto, pesquisarProdutos,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
+
+async function produtosParaLandingPage() {
+  try {
+    const sql = 'SELECT * FROM tb_produto';
+    const [result] = await conexao.query(sql);
+    return result;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export default {
+  alterarImagem,
+  cadastrarProduto,
+  pesquisarProdutos,
+  alterarProdutoPorID,
+  consultarProdutoPorID,
+  removerProdutoPorID,
+  produtosParaLandingPage, 
+};

@@ -16,6 +16,21 @@ const {
 const endpoints = Router();
 const upload = multer({dest: 'storages/capaslivros'});
 
+endpoints.get('/landing-page', async (req, resp) => {
+  try {
+    const produtos = await produtosParaLandingPage();
+
+    if (produtos.length === 0) {
+      resp.status(404).send({ erro: 'Nenhum produto encontrado para a landing page.' });
+    } else {
+      resp.status(200).json(produtos);
+    }
+  } catch (error) {
+    resp.status(500).send({ erro: 'Ocorreu um erro ao obter dados para a landing page.' + error.message });
+  }
+});
+
+
 endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
   try { 
       const {id}= req.params;
