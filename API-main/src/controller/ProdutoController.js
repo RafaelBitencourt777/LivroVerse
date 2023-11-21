@@ -10,7 +10,8 @@ const {
   pesquisarProdutos,
   alterarProdutoPorID,
   consultarProdutoPorID,
-  removerProdutoPorID
+  removerProdutoPorID,
+  listarLivros
 } = produtoRepository;
 
 const endpoints = Router();

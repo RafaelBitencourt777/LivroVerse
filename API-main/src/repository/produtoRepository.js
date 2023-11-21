@@ -112,5 +112,6 @@ export default {
   alterarProdutoPorID,
   consultarProdutoPorID,
   removerProdutoPorID,
-  produtosParaLandingPage, 
+  produtosParaLandingPage,
+  listarLivros
 };
