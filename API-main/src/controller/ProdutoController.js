@@ -16,6 +16,7 @@ const {
 const endpoints = Router();
 const upload = multer({dest: 'storages/capaslivros'});
 
+<<<<<<< HEAD
 endpoints.get('/landing-page', async (req, resp) => {
   try {
     const produtos = await produtosParaLandingPage();
@@ -32,6 +33,9 @@ endpoints.get('/landing-page', async (req, resp) => {
 
 
 endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
+=======
+endpoints.put('/produto/:id/livro', upload.single('capalivros'), async (req, resp) => {
+>>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
   try { 
       const {id}= req.params;
       const imagem = req.file.path;
@@ -39,7 +43,7 @@ endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp
    const resultadoAlteracao = await alterarImagem(id, imagem);
 
     resp.status(200).send({
-      mensagem: 'Imagem do filme alterada com sucesso!',
+      mensagem: 'Imagem do livro alterada com sucesso!',
       resultado: resultadoAlteracao,
     });
   } catch (err) {
@@ -182,3 +186,11 @@ endpoints.get('/produto/pesquisar', async (req, resp) => {
 
 export default endpoints;
 
+endpoints.get('/produtos', async (req, res) => {
+  try {
+    const livros = await listarLivros(); 
+    res.status(200).json(livros);
+  } catch (error) {
+    res.status(500).send({ erro: 'Ocorreu um erro ao listar os livros.' + error.message });
+  }
+});

@@ -12,6 +12,9 @@ import ad1 from '../../assets/img/1banneroferta.png';
 import ad2 from '../../assets/img/2banneroferta.png';
 import ad3 from '../../assets/img/3banneroferta.png';
 
+
+
+const apiUrl = '/http://129.148.42.252:5018/';
 function App() {
   const [livros, setLivros] = useState([]);
   const [currentAd, setCurrentAd] = useState(1);
@@ -41,7 +44,10 @@ function App() {
     const interval = setInterval(() => {
       setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
     }, 5000);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
     return () => clearInterval(interval);
   }, []);
 
@@ -55,7 +61,11 @@ function App() {
   };
 
   const handleIndicatorClick = (indicator) => {
+<<<<<<< HEAD
     clearInterval();
+=======
+    clearInterval(); 
+>>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
     setCurrentAd(indicator);
   };
 

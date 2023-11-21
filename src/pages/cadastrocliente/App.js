@@ -111,3 +111,4 @@ function Cadastrocliente() {
 }
 
 export default Cadastrocliente;
+console.log('Valor de id_assinatura:', cliente.id_assinatura);

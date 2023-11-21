@@ -1,60 +1,46 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import './index.scss';
+
 import user from '../../assets/img/useradm.png';
 import up from '../../assets/img/cadastrar-img.png';
-import axios from 'axios';
 
 export default function CadastrarProd() {
   const [produto, setProduto] = useState({
-    id_categoria: '', 
-    id_avaliacao: '', 
-    nm_produto: '',
-    vl_preco_fis: '',
-    ds_desc: '',
-    vl_preco_pdf: '',
-    vl_preco_kindle: '',
-    vl_preco_promocional: '',
-    bt_destaque: '',
-    bt_promocao: '',
-    bt_disponivel: '',
-    qtd_estoque: '',
-    bl_favorito: '',
-    imagem: null,
+    nome: '',
+    quantidade: 0,
+    codigo: 0,
+    estoque: 0,
+    preco: 0,
+    descricao: '',
+    genero: '',
   });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setProduto({
-      ...produto,
-      [name]: value,
-    });
-  };
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    setProduto({
-      ...produto,
-      imagem: file,
-    });
+    setProduto({ ...produto, imagem: file });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setProduto({ ...produto, [name]: value });
+  };
+  const cadastrarProduto = async () => {
     try {
       const formData = new FormData();
-      for (const key in produto) {
-        formData.append(key, produto[key]);
-      }
+      Object.entries(produto).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
 
-      const response = await axios.post('http://129.148.42.252:5018/produto/cadastrar', formData);
+      await axios.post('http://129.148.42.252:5018/produto/cadastrar', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
 
-      if (response.status === 201) {
-        console.log('Produto cadastrado com sucesso!');
-      } else {
-        console.error('Erro ao cadastrar o produto.');
-      }
+      console.log('Produto cadastrado com sucesso!');
     } catch (error) {
-      console.error('Erro ao fazer a solicitação:', error);
+      console.error('Erro ao cadastrar produto:', error.message);
     }
   };
 
@@ -63,39 +49,78 @@ export default function CadastrarProd() {
       <img className='cad-user' src={user} alt='' />
       <div className='cadp-quad'>
         <h1>Adicione um novo produto</h1>
-        <form onSubmit={handleSubmit}>
-          <div className='inps1'>
-            <input
-              className='Cad-name'
-              type='text'
-              placeholder='Nome do Produto'
-              name='nm_produto'
-              value={produto.nm_produto}
-              onChange={handleInputChange}
-            />
-            <input
-              className='Cad-quant'
-              type='number'
-              placeholder='Quantidade'
-              name='qtd_estoque'
-              value={produto.qtd_estoque}
-              onChange={handleInputChange}
-            />
-          </div>
-
-
+        <div className='inps1'>
+          <input
+            className='Cad-name'
+            type='text'
+            name='nome'
+            placeholder='Nome do Produto'
+            value={produto.nome}
+            onChange={handleInputChange}
+          />
+          <input
+            className='Cad-quant'
+            type='number'
+            name='quantidade'
+            placeholder='Quantidade'
+            value={produto.quantidade}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className='inps2'>
+          <input
+            className='Cad-cod'
+            type='number'
+            name='codigo'
+            placeholder='Código'
+            value={produto.codigo}
+            onChange={handleInputChange}
+          />
+          <input
+            className='Cad-est'
+            type='number'
+            name='estoque'
+            placeholder='Estoque'
+            value={produto.estoque}
+            onChange={handleInputChange}
+          />
+          <input
+            className='Cad-preco'
+            type='number'
+            name='preco'
+            placeholder='Preço'
+            value={produto.preco}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className='inps3'>
+          <input
+            className='Cad-desc'
+            type='text'
+            name='descricao'
+            placeholder='Descrição do Produto'
+            value={produto.descricao}
+            onChange={handleInputChange}
+          />
           <div className='inp-pe'>
+            <input
+              className='Cad-gen'
+              type='text'
+              name='genero'
+              placeholder='Gênero do Produto'
+              value={produto.genero}
+              onChange={handleInputChange}
+            />
             <input
               className='Cad-img'
               type='file'
-              accept='image/*'
+              name='imagem'
               onChange={handleFileChange}
             />
             <img src={up} alt='' />
           </div>
-
-          <button type='submit'>Cadastrar Produto</button>
-        </form>
+        </div>
+        <button onClick={cadastrarProduto}>Cadastrar Produto</button>
       </div>
     </div>
   );
