@@ -44,10 +44,6 @@ function App() {
     const interval = setInterval(() => {
       setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
     }, 5000);
-<<<<<<< HEAD
-
-=======
->>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
     return () => clearInterval(interval);
   }, []);
 
@@ -61,11 +57,7 @@ function App() {
   };
 
   const handleIndicatorClick = (indicator) => {
-<<<<<<< HEAD
-    clearInterval();
-=======
     clearInterval(); 
->>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
     setCurrentAd(indicator);
   };
 

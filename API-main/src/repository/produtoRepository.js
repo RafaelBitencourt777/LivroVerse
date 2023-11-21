@@ -95,8 +95,6 @@ async function pesquisarLivros(pesquisa) {
   }
 }
 
-
-<<<<<<< HEAD
 async function produtosParaLandingPage() {
   try {
     const sql = 'SELECT * FROM tb_produto';
@@ -116,6 +114,3 @@ export default {
   removerProdutoPorID,
   produtosParaLandingPage, 
 };
-=======
-export default { alterarImagem,listarLivros,cadastrarProduto, pesquisarLivros,alterarProdutoPorID, consultarProdutoPorID, removerProdutoPorID };
->>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5

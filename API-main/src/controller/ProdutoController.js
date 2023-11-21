@@ -16,7 +16,6 @@ const {
 const endpoints = Router();
 const upload = multer({dest: 'storages/capaslivros'});
 
-<<<<<<< HEAD
 endpoints.get('/landing-page', async (req, resp) => {
   try {
     const produtos = await produtosParaLandingPage();
@@ -33,9 +32,6 @@ endpoints.get('/landing-page', async (req, resp) => {
 
 
 endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
-=======
-endpoints.put('/produto/:id/livro', upload.single('capalivros'), async (req, resp) => {
->>>>>>> 53569cc462e374f7dd04b618a3ed76df52d58cd5
   try { 
       const {id}= req.params;
       const imagem = req.file.path;
