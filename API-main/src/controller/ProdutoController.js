@@ -2,8 +2,6 @@ import { Router } from 'express';
 import produtoRepository from '../repository/produtoRepository.js';
 import multer from 'multer';
 
-
-
 const {
   alterarImagem,
   cadastrarProduto,
