@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './landing.scss';
+
 import Cabecalho from '../../components/cabecalho/index.js';
 import Rodape from '../../components/rodape/index.js';
 import lesq from '../../assets/img/lesq.png';

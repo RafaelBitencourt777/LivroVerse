@@ -15,11 +15,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 15px;
     }
 
     .cima > h1 {
-        font-size: 45px;
+        font-size: 35px;
         color: #8fb8e7;
         font-family: 'Montserrat';
         font-weight: 700;
@@ -40,7 +40,7 @@
 
     .esquerda > h2 {
         font-family: 'Montserrat';
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 400;
         text-align: center;
     }
@@ -48,14 +48,14 @@
     .esquerda > h1 {
         font-family:'Montserrat';
         font-weight: 400;
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .cinza {
         background-color: #CDCDCD;
         width: 22vw;
         border-radius: 20px;
-        padding: 15px;
+        padding: 10px;
     }
 
     .row {
@@ -67,7 +67,7 @@
 
     .row > h1 {
         font-family: 'Montserrat';
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 400px;
     }
 
@@ -83,31 +83,34 @@
         background-color: #CDCDCD;
         width: 22vw;
         border-radius: 20px;
-        padding: 15px;
+        padding: 10px;
     }
 
     .row2 {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: -20px;
+        margin-bottom: -20px;
     }
 
     .row2 > input {
         background-color: #CDCDCD;
-        height: 28px;
-        width: 28px;
+        height: 22px;
+        width: 22px;
         margin-right: 20px;
     }
 
     .row2 > p {
         font-family: 'Montserrat';
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 400;
     }
 
     .direita {
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
 
     .d-row {
@@ -116,7 +119,35 @@
     }
 
     .card {
+        display: flex;
+        flex-direction: row;
         padding: 10px;
-        
+        height: 250px;
+        width: 300px;
+        background-color: #D9D9D9;
+        padding: 15px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+
+    .livro {
+        height: 240px;
+        width: 150px;
+        background-color: #333333;
+        margin-right: 10px;
+    }
+
+    .text > h3 {
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+    .direita > img {
+        height: 80px;
+        position: absolute;
+        right: 15px;
+        bottom: 295px;
     }
 }    
