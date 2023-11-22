@@ -35,7 +35,11 @@ export default function PrincAdm() {
                     
                     </a>
 
-                    <button>Usuários</button>
+                    
+                    <a href='/usuarios'>
+                        <button>Usuários</button>
+                    </a>
+                    
 
                     <button>Mensagens</button>
 

@@ -14,8 +14,6 @@ import ad2 from '../../assets/img/2banneroferta.png';
 import ad3 from '../../assets/img/3banneroferta.png';
 
 
-
-const apiUrl = '/http://129.148.42.252:5018/';
 function App() {
   const [livros, setLivros] = useState([]);
   const [currentAd, setCurrentAd] = useState(1);

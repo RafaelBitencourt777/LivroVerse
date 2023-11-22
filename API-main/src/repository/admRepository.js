@@ -73,6 +73,15 @@ async function verificarEmailExistente(email) {
     const sql = `SELECT COUNT(*) AS count FROM TB_Administrador WHERE ds_email = ?`;
     const [rows] = await conexao.query(sql, [email]);
     return rows[0].count > 0;
-}
+};
+async function listarUsuarios() {
+    try {
+      const sql = 'SELECT * FROM TB_Cliente';
+      const [rows] = await conexao.query(sql);
+      return rows;
+    } catch (error) {
+      throw error;
+    }
+  }
 
-export default {realizarLoginAdm , criarContaAdm}
+export default {realizarLoginAdm , criarContaAdm, listarUsuarios}

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './index.scss';
 
+import ListarUsuarios from './pages/ADM-usuarios/index.js';
 import App from './pages/landingpage/landing.js';
 import AcompPedido from './pages/acompanhamentoPedido';
 import BarraLateral from './components/barral';
@@ -56,6 +57,7 @@ root.render(
         <Route path='/carrinho' element={<Carrinho />} />
         <Route path='/detalhes-pedidos-andamento' element={<DtlPedAnd/>} />
         <Route path='/pedidos-finalizados' element={<PedFin/>} />
+        <Route path='/usuarios' element={<ListarUsuarios/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
