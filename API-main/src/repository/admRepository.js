@@ -1,3 +1,4 @@
+import { toHaveErrorMessage } from "@testing-library/jest-dom/matchers.js";
 import conexao from "./connection.js";
 
 // Função para realizar o login do administrador.
@@ -67,8 +68,6 @@ export async function criarContaAdm(nome, email, senha) {
         throw error;
     }
 }
-
-// Função auxiliar para verificar se um email já está cadastrado.
 async function verificarEmailExistente(email) {
     const sql = `SELECT COUNT(*) AS count FROM TB_Administrador WHERE ds_email = ?`;
     const [rows] = await conexao.query(sql, [email]);
@@ -80,8 +79,7 @@ async function listarUsuarios() {
       const [rows] = await conexao.query(sql);
       return rows;
     } catch (error) {
-      throw error;
+      throw ErrorMessage;
     }
   }
-
 export default {realizarLoginAdm , criarContaAdm, listarUsuarios}
