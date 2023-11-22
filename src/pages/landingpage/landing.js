@@ -187,7 +187,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Livros de putaria</h1>
+          <h1>Livros de Aventura</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
