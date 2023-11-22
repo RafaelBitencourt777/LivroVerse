@@ -43,7 +43,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
-    }, 5000);
+    }, 13000);
     return () => clearInterval(interval);
   }, []);
 
@@ -90,12 +90,12 @@ function App() {
 
           <div className="Ofertasp">
             <div className="Ofertap">
-              
+              <h2 className='chegapfv'>Ir até "Livros em Oferta da Black Week"</h2>
               <img src="" alt="" />
             </div>
 
             <div className="Ofertap">
-              
+              <h2 className='chegapfv'>Ir para a recomendação do dia</h2>
               <img src="" alt="" />
             </div>
           </div>
@@ -116,7 +116,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Mais bem avaliados de: Mistério</h1>
+          <h1>Livros em desconto para nossa Black Week</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
@@ -130,7 +130,7 @@ function App() {
         </div>
 
         <div className="MaisVen">
-          <h1>Mais bem avaliados de: Terror</h1>
+          <h1>Boas-vindas: Temos ofertas para vocês</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
@@ -145,6 +145,48 @@ function App() {
 
         <div className="MaisVen">
           <h1>Livros para te ajudar a refletir</h1>
+
+          <div className="cards">
+            <img className="lesq" src={lesq} alt="" />
+
+            {Array.isArray(livros) && livros.length > 0 ? renderizarLivros() : null}
+
+            <div className="card"></div>
+
+            <img className="ldir" src={ldir} alt="" />
+          </div>
+        </div>
+
+        <div className="MaisVen">
+          <h1>Livors de terror</h1>
+
+          <div className="cards">
+            <img className="lesq" src={lesq} alt="" />
+
+            {Array.isArray(livros) && livros.length > 0 ? renderizarLivros() : null}
+
+            <div className="card"></div>
+
+            <img className="ldir" src={ldir} alt="" />
+          </div>
+        </div>
+
+        <div className="MaisVen">
+          <h1>Livros de Romance</h1>
+
+          <div className="cards">
+            <img className="lesq" src={lesq} alt="" />
+
+            {Array.isArray(livros) && livros.length > 0 ? renderizarLivros() : null}
+
+            <div className="card"></div>
+
+            <img className="ldir" src={ldir} alt="" />
+          </div>
+        </div>
+
+        <div className="MaisVen">
+          <h1>Livros de putaria</h1>
 
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />

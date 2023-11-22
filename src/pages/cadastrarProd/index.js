@@ -38,6 +38,7 @@ export default function CadastrarProd() {
         },
       });
 
+      
       console.log('Produto cadastrado com sucesso!');
     } catch (error) {
       console.error('Erro ao cadastrar produto:', error.message);

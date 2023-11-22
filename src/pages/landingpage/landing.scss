@@ -18,7 +18,7 @@
   }
 
   .Ofertag {
-    background-color: #FFF;
+    border: #000 1px;
     border-radius: 15px;
     height: 250px;
     width: 1700px;
@@ -31,24 +31,25 @@
     width: 68px;
     height: 44px;
     left: 10px;
-    top: 70px;
+    top: 100px;
+  }
+  .esquerda-o:hover {
+    cursor: pointer;
   }
 
-  .ofertin {
-    height: 251px;
-    width: 1050px;
+  .direita-o:hover {
+    cursor: pointer;
   }
-
   .direita-o {
     position: absolute;
     width: 68px;
     height: 44px;
     right: 10px;
-    top: 70px;
+    top: 100px;
   }
 
   .bolinhas {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     bottom: 10px;
@@ -75,6 +76,12 @@
     width: 21px;
     height: 21px;
     border-radius: 100px;
+  }
+
+  
+  .ofertin {
+    height: 251px;
+    width: 1050px;
   }
 
   .Ofertasp {
@@ -110,6 +117,10 @@
     color: #FFF;
     text-align: left;
     font-size: 32px;
+  }
+
+  .chegapfv{
+    color: #FFF;
   }
 
   .cards {
