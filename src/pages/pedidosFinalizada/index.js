@@ -111,7 +111,7 @@ export default function PedFin() {
 
                                 <div className='text'>
 
-                                    <h3>Data: xx/xx/xx/</h3>
+                                    <h3>Data: xx/xx/xx</h3>
 
                                     <h3>Valor: xx,xx</h3>
 
@@ -129,7 +129,7 @@ export default function PedFin() {
 
                                 <div className='text'>
 
-                                    <h3>Data: xx/xx/xx/</h3>
+                                    <h3>Data: xx/xx/xx</h3>
 
                                     <h3>Valor: xx,xx</h3>
 
@@ -153,7 +153,7 @@ export default function PedFin() {
 
                                 <div className='text'>
 
-                                    <h3>Data: xx/xx/xx/</h3>
+                                    <h3>Data: xx/xx/xx</h3>
 
                                     <h3>Valor: xx,xx</h3>
 
@@ -171,7 +171,7 @@ export default function PedFin() {
 
                                 <div className='text'>
 
-                                    <h3>Data: xx/xx/xx/</h3>
+                                    <h3>Data: xx/xx/xx</h3>
 
                                     <h3>Valor: xx,xx</h3>
 
