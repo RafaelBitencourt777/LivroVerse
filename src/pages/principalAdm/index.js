@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 
@@ -14,7 +15,7 @@ export default function PrincAdm() {
   useEffect(() => {
     const fazerLogin = async () => {
       try {
-        const response = await fetch('/adm/login', {
+        const response = await fetch('http://129.148.42.252/adm/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
