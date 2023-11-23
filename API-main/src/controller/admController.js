@@ -19,7 +19,7 @@ endpoints.get('/adm/usuarios', async (req, resp) => {
     const usuarios = await listarUsuarios();
 
     if (usuarios.length === 0) {
-      resp.status(404).send({ erro: 'Nenhum usuário encontrado.' });
+    ;
     } else {
       resp.status(200).json(usuarios);
     }
