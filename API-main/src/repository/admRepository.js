@@ -72,7 +72,7 @@ async function verificarEmailExistente(email) {
     const [rows] = await conexao.query(sql, [email]);
     return rows[0].count > 0;
 };
-async function listarUsuarios() {
+async function listar() {
     try {
       const sql = 'SELECT * FROM TB_Cliente';
       const [rows] = await conexao.query(sql);
@@ -80,5 +80,5 @@ async function listarUsuarios() {
     } catch (error) {
       throw ErrorMessage;
     }
-  }
-export default {realizarLoginAdm , criarContaAdm, listarUsuarios}
+};
+export default {realizarLoginAdm , criarContaAdm, listar}

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { realizarLoginAdm ,criarContaAdm , listarUsuarios} from '../repository/admRepository.js';
+import { realizarLoginAdm ,criarContaAdm , listar} from '../repository/admRepository.js';
 
 const endpoints = Router();
 endpoints.post('/adm/login', async (req, resp) => {
@@ -16,7 +16,7 @@ endpoints.post('/adm/login', async (req, resp) => {
 
 endpoints.get('/adm/usuarios', async (req, resp) => {
   try {
-    const usuarios = await listarUsuarios();
+    const usuarios = await listar();
 
     if (usuarios.length === 0) {
     ;
