@@ -1,4 +1,4 @@
-import { toHaveErrorMessage } from "@testing-library/jest-dom/matchers.js";
+
 import conexao from "./connection.js";
 
 // Função para realizar o login do administrador.
