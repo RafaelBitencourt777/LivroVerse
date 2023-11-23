@@ -30,8 +30,8 @@ export default function Produtos() {
                                 <th>Quantidade</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            {map(item => 
+                        <tbody> 
+                           {Map(item => 
                                 <tr>
                                     <th>{item.id}</th>
                                     <th>{item.nome}</th>
@@ -51,3 +51,4 @@ export default function Produtos() {
     
     )
 }
+

@@ -79,12 +79,18 @@
         width: 350px;
     }
 
-    .direita > h2 {
+    .aroda {
         color: #FFF;
         font-family: 'Martel Sans';
         font-size: 15px;
         text-align: left;
         margin: 1px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .aroda:hover{
+        cursor: pointer;
     }
     
     .baixo {

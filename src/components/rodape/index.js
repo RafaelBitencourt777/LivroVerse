@@ -4,6 +4,7 @@ import insta from '../../assets/img/insta.png';
 import face from '../../assets/img/face.png';
 import ttk from '../../assets/img/ttk.png';
 import logor from '../../assets/img/livrosolo.png';
+import arquivo from '../../assets/doc/PolíticaDeVendasLIVROVERSE.docx'
 
 export default function Rodape() {
 
@@ -38,9 +39,9 @@ export default function Rodape() {
                 </div>
 
                 <div class="direita">
-                    <h2>Política de Vendas, Trocas e Privacidade</h2>
-                    <h2>Termos e condições de compra<br/></h2>
-                    <h2>Fale conosco</h2>
+                    <a href={arquivo} download="PolíticaDeVendasLIVROVERSE.docx" className='aroda'>Política de Vendas, Trocas e Privacidade</a>
+                    <a className='aroda'>Termos e condições de compra</a>
+                    <a className='aroda'>Fale conosco</a>
                 </div>
 
             </div>
