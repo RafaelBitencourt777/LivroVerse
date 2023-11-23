@@ -46,8 +46,14 @@ export default function PrincAdm() {
         </div>
 
         <div className='adm-ebaixo'>
-          <button>Pedidos</button>
-          <button>Produtos</button>
+
+          <a href='/pedidos-finalizados'>
+            <button>Pedidos Finalizados</button>
+          </a>
+
+          <a href=''>
+            <button>Produtos</button>
+          </a>
 
           <a href='/cadastrar-produto'>
             <button>Adicionar Produtos</button>
@@ -57,9 +63,18 @@ export default function PrincAdm() {
             <button>Usuários</button>
           </a>
 
-          <button>Mensagens</button>
-          <button>Relatórios</button>
-          <button>Gerenciar Produtos</button>
+          <a href='/mensagens'>
+            <button>Mensagens</button>
+          </a>
+
+          <a href='/relatorios'>
+            <button>Relatórios</button>
+          </a>
+
+          <a href=''>
+            <button>Gerenciar Produtos</button>
+          </a>
+
         </div>
       </div>
 
@@ -70,27 +85,39 @@ export default function PrincAdm() {
 
         <div className='adm-dbaixo'>
           <div className='dois-quad'>
-            <div className='adm-quadrado'>
-              <h2>Pedidos</h2>
-              <img src={pedidos} alt='' />
-            </div>
 
-            <div className='adm-quadrado'>
-              <h2>Produtos Cadastrados</h2>
-              <img src={pc} alt='' />
-            </div>
+            <a className='t' href='/pedidos-em-andamento'>
+              <div className='adm-quadrado'>
+                <h2>Pedidos</h2>
+                <img src={pedidos} alt='' />
+              </div>
+            </a>
+
+            <a className='t' href=''>
+              <div className='adm-quadrado'>
+                <h2>Produtos Cadastrados</h2>
+                <img src={pc} alt='' />
+              </div>
+            </a>
+
           </div>
 
           <div className='dois-quad'>
-            <div className='adm-quadrado'>
-              <h2>Gerenciar Produtos</h2>
-              <img src={gp} alt='' />
-            </div>
 
-            <div className='adm-quadrado'>
-              <h2>Relatórios</h2>
-              <img src={relatorios} alt='' />
-            </div>
+            <a className='t' href=''>
+              <div className='adm-quadrado'>
+                <h2>Gerenciar Produtos</h2>
+                <img src={gp} alt='' />
+              </div>
+            </a>
+
+            <a className='t' href='/relatorios'>
+              <div className='adm-quadrado'>
+                <h2>Relatórios</h2>
+                <img src={relatorios} alt='' />
+              </div>
+            </a>
+
           </div>
         </div>
       </div>

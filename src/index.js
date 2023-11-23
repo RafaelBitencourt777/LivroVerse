@@ -28,6 +28,10 @@ import CabecalhoAdm from './components/cabecalhoAdm/index.js';
 import Carrinho from './pages/carrinho';
 import DtlPedAnd from './pages/detalhesPedAndamento';
 import PedFin from './pages/pedidosFinalizada';
+import PedidosAndamento from './pages/pedidosAndamento';
+import ListarMensagens from './pages/ADM-mensagens';
+import ListarRelatorios from './pages/ADM-relatorios';
+import Produtos from './pages/tabelaProdutos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -58,6 +62,10 @@ root.render(
         <Route path='/detalhes-pedidos-andamento' element={<DtlPedAnd/>} />
         <Route path='/pedidos-finalizados' element={<PedFin/>} />
         <Route path='/usuarios' element={<ListarUsuarios/>} />
+        <Route path='/pedidos-em-andamento' element={<PedidosAndamento/>} />
+        <Route path='/mensagens' element={<ListarMensagens/>} />
+        <Route path='/relatorios' element={<ListarRelatorios/>} />
+        <Route path='/produtos' element={<Produtos/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

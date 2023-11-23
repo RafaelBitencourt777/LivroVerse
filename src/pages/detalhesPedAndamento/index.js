@@ -26,7 +26,7 @@ export default function DtlPedAnd() {
 
                     <div className='a-cima'>
 
-                        <a href='previsualizaçao'>
+                        <a href='pedidos-em-andamento'>
                             <img alt='' src={voltar} />
                         </a>
 
