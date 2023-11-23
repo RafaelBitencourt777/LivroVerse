@@ -14,7 +14,7 @@ endpoints.post('/adm/login', async (req, resp) => {
   }
 });
 
-endpoints.get('/usuarios', async (req, resp) => {
+endpoints.get('/adm/usuarios', async (req, resp) => {
   try {
     const usuarios = await listarUsuarios();
 
