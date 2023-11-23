@@ -1,6 +1,5 @@
 import conexao from "./connection.js";
 
-// Função para realizar o login do administrador.
 export async function realizarLoginAdm(email, senha) {
     try {
         // Verifica se o e-mail e a senha foram fornecidos.
@@ -72,7 +71,7 @@ async function verificarEmailExistente(email) {
     const [rows] = await conexao.query(sql, [email]);
     return rows[0].count > 0;
 };
-async function listar() {
+async function teste() {
     try {
       const sql = 'SELECT * FROM TB_Cliente';
       const [rows] = await conexao.query(sql);
@@ -81,4 +80,4 @@ async function listar() {
       throw ErrorMessage;
     }
 };
-export default {realizarLoginAdm , criarContaAdm, listar}
+export default {realizarLoginAdm , criarContaAdm, teste};
