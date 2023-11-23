@@ -1,4 +1,3 @@
-
 import conexao from "./connection.js";
 
 // Função para realizar o login do administrador.
