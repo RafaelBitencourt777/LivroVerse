@@ -75,11 +75,13 @@ function App() {
 
           <div className="Ofertasp">
             <div className="Ofertap">
-              <img src="" alt=""/>
+              <h2 className='chegapfv'>Ir até "Livros em Oferta da Black Week"</h2>
+              <img src="" alt="" />
             </div>
 
             <div className="Ofertap">
-              <img src="" alt=""/>
+              <h2 className='chegapfv'>Ir para a recomendação do dia</h2>
+              <img src="" alt="" />
             </div>
           </div>
         </div>
