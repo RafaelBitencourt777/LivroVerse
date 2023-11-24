@@ -80,4 +80,4 @@ async function porra() {
       throw ErrorMessage;
     }
 };
-export default {realizarLoginAdm , criarContaAdm, porra};
+export default {realizarLoginAdm , criarContaAdm, };

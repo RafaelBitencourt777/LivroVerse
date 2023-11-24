@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import { realizarLoginAdm, criarContaAdm, porra } from '../repository/admRepository.js';
+import { realizarLoginAdm, criarContaAdm, } from '../repository/admRepository.js';
 
 
 const endpoints = Router();
