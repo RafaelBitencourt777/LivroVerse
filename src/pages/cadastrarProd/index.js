@@ -14,6 +14,7 @@ export default function CadastrarProd() {
     preco: 0,
     descricao: '',
     genero: '',
+    imagem: null, // Adiciona um estado para a imagem
   });
 
   const handleFileChange = (e) => {
@@ -25,6 +26,7 @@ export default function CadastrarProd() {
     const { name, value } = e.target;
     setProduto({ ...produto, [name]: value });
   };
+
   const cadastrarProduto = async () => {
     try {
       const formData = new FormData();
@@ -38,7 +40,6 @@ export default function CadastrarProd() {
         },
       });
 
-      
       console.log('Produto cadastrado com sucesso!');
     } catch (error) {
       console.error('Erro ao cadastrar produto:', error.message);
