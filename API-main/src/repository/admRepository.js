@@ -71,7 +71,7 @@ async function verificarEmailExistente(email) {
     const [rows] = await conexao.query(sql, [email]);
     return rows[0].count > 0;
 };
-async function porra() {
+async function listar() {
     try {
       const sql = 'SELECT * FROM TB_Cliente';
       const [rows] = await conexao.query(sql);
@@ -80,4 +80,4 @@ async function porra() {
       throw ErrorMessage;
     }
 };
-export default {realizarLoginAdm , criarContaAdm, porra };
+export default {realizarLoginAdm , criarContaAdm, listar};
