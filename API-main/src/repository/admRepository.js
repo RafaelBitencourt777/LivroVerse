@@ -59,15 +59,6 @@ export async function criarContaAdm(nome, email, senha) {
   }
 }
 
-export async function listar() {
-    try {
-      const sql = 'SELECT * FROM TB_Cliente';
-      const [rows] = await conexao.query(sql);
-      return rows;
-    } catch (error) {
-      console.error('Erro ao listar usuários:', error.message);
-      throw error;
-    }
-  }
+
   
-  export default { realizarLoginAdm, criarContaAdm, listar };
+  export default { realizarLoginAdm, criarContaAdm,  };
