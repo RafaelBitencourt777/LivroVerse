@@ -30,7 +30,7 @@ endpoints.get('/landing-page', async (req, resp) => {
 });
 
 
-endpoints.put('/filme/:id/imagem', upload.single('capalivros'), async (req, resp) => {
+endpoints.put('/produto/:id/imagem', upload.single('capalivros'), async (req, resp) => {
   try { 
       const {id}= req.params;
       const imagem = req.file.path;
