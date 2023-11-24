@@ -1,6 +1,6 @@
 import './prev.scss';
 import React, { useState } from 'react';
-import harry from '../../assets/img/harry.jpg';
+import principe from '../../assets/img/principe.jpg';
 import Cabecalho from '../../components/cabecalho';
 import Rodape from '../../components/rodape';
 import livro from '../../assets/img/iconlivrofis.png';
@@ -12,7 +12,7 @@ import coracaoNaoCurtido from '../../assets/img/coracao2.png';
 import StarRating from '../avlstars/star';
 import Carrinho from '../../assets/img/carrinho.png'
 
-export default function Prev1() {
+export default function Prev7() {
     const [curtido, setCurtido] = useState(false);
   
     const handleClickCurtir = () => {
@@ -29,7 +29,7 @@ export default function Prev1() {
                     <div className='imagem-texto'>
                     <div className='car'>
                     <div className='img' alt='aqui seria a imagem do livro'>
-                        <img src={harry} alt="Imagem do livro" />
+                        <img src={principe} alt="Imagem do livro" />
                     </div>
                         
                         <a className='botaofeio' href='/carrinho'>
@@ -45,8 +45,8 @@ export default function Prev1() {
                         <div className='direita'>
                         <div className='titulo-e-heart'>
                          <div className='textos'>
-                            <h3>Harry Potter e a Pedra Filosofal</h3>
-                            <h4>Por <label>J.K Rowling</label></h4>
+                            <h3>O Pequeno Príncipe</h3>
+                            <h4>Por <label>Antoine de Saint-Exupéry</label></h4>
                         </div>
                         <img
                             className={`heart ${curtido ? 'curtido' : ''}`}
@@ -62,7 +62,7 @@ export default function Prev1() {
 
                             <div className='desc'>
                                 <h3><b>Descrição:</b></h3>
-                                <p> O primeiro livro da série "Harry Potter", que narra a jornada do jovem bruxo Harry Potter enquanto ele descobre seu lugar no mundo mágico e enfrenta desafios emocionantes. </p>
+                                <p>Uma história filosófica e encantadora que explora temas como a amizade, o amor e a busca por significado na vida, através das experiências de um pequeno príncipe.</p>
                             </div>
                             
                             <div className='botoes'>
@@ -72,7 +72,7 @@ export default function Prev1() {
                                         <img src={livro} alt=''/>
                                         <div className='b-textos'>
                                             <p>Modelo Físico</p>
-                                            <h5><b>Preço:R$49,90</b></h5>
+                                            <h5><b>Preço:R$ 25,00</b></h5>
                                         </div>
                                     </button>
                                 </a>
@@ -82,7 +82,7 @@ export default function Prev1() {
                                         <img src={pdf} alt=''/>
                                         <div className='b-textos'>
                                             <p>Modelo PDF</p>
-                                            <h5><b>Preço: R$ 39,90</b></h5>
+                                            <h5><b>Preço: R$ 25,00</b></h5>
                                         </div>
                                     </button>
                                 </a>
@@ -92,7 +92,7 @@ export default function Prev1() {
                                         <img src={kind} alt=''/>
                                         <div className='b-textos'>
                                             <p>Modelo Kindle</p>
-                                            <h5><b>Preço: R$ 39,90</b></h5>
+                                            <h5><b>Preço: R$ 25,00</b></h5>
                                         </div>
                                     </button>
                                 </a>

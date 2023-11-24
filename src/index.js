@@ -14,6 +14,15 @@ import Favoritos from './pages/favoritos';
 import Lgadm from './pages/loginadm/loginadm.js';
 import Lgcliente from './pages/logincliente/App.js';
 import Prev from './pages/previsu/prev.js';
+import Prev2 from './pages/previsu2/prev2.js';
+import Prev3 from './pages/previsu3/prev3.js';
+import Prev4 from './pages/previsu4/prev4.js';
+import Prev5 from './pages/previsu5/prev5.js';
+import Prev6 from './pages/previsu6/prev6.js';
+import Prev7 from './pages/previsu7/prev7.js';
+import Prev8 from './pages/previsu8/prev8.js';
+import Prev9 from './pages/previsu9/prev9.js';
+import Prev10 from './pages/previsu10/prev10.js';
 import Recupera from './pages/redefinirsenha/redef.js';
 import Rodape from './components/rodape';
 import Sob from './pages/sobre/livro.js';
@@ -47,6 +56,15 @@ root.render(
         <Route path='/loginadm' element={<Lgadm />} />
         <Route path='/cadastrocliente' element={<Cadastrocliente />} />
         <Route path='/previsualizaçao' element={<Prev />} />
+        <Route path='/previsualizaçao2' element={<Prev2 />} />
+        <Route path='/previsualizaçao3' element={<Prev3 />} />
+        <Route path='/previsualizaçao4' element={<Prev4 />} />
+        <Route path='/previsualizaçao5' element={<Prev5 />} />
+        <Route path='/previsualizaçao6' element={<Prev6 />} />
+        <Route path='/previsualizaçao7' element={<Prev7 />} />
+        <Route path='/previsualizaçao8' element={<Prev8 />} />
+        <Route path='/previsualizaçao9' element={<Prev9 />} />
+        <Route path='/previsualizaçao10' element={<Prev10 />} />
         <Route path='/recuperar-senha' element={<Recupera />} />
         <Route path='/sobre' element={<Sob/>} />
         <Route path='/favoritos' element={<Favoritos/>} />

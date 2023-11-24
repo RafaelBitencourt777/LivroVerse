@@ -104,7 +104,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao2'>
                 <div className="imagem">
                   <img src={anos} alt="Cem Anos de Solidão" />
                 </div>
@@ -115,7 +115,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao3'>
                 <div className="imagem">
                   <img src={capital} alt="1984" />
                 </div>
@@ -126,7 +126,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao4'>
                 <div className="imagem">
                   <img src={gatsby} alt="O Grande Gatsby" />
                 </div>
@@ -137,7 +137,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao5'>
                 <div className="imagem">
                   <img src={senhor} alt="O Senhor dos Anéis" />
                 </div>
@@ -162,7 +162,7 @@ function App() {
             <div className="card"></div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao6'>
                 <div className="imagem">
                   <img src={dom} alt="Dom Quixote" />
                 </div>
@@ -173,7 +173,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao7'>
                 <div className="imagem">
                   <img src={principe} alt="O Pequeno Príncipe" />
                 </div>
@@ -184,7 +184,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao8'>
                 <div className="imagem">
                   <img src={livros} alt="A Menina que Roubava Livros" />
                 </div>
@@ -195,7 +195,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao9'>
                 <div className="imagem">
                   <img src={culpa} alt="A Culpa é das Estrelas" />
                 </div>
@@ -206,7 +206,7 @@ function App() {
             </div>
 
             <div className="card">
-              <a href='/previsualizaçao'>
+              <a href='/previsualizaçao10'>
                 <div className="imagem">
                   <img src={codigo} alt="O Código Da Vinci" />
                 </div>
