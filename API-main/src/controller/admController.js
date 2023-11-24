@@ -2,6 +2,7 @@
 import { Router } from 'express';
 import { realizarLoginAdm, criarContaAdm, porra } from '../repository/admRepository.js';
 
+
 const endpoints = Router();
 
 endpoints.post('/adm/login', async (req, resp) => {
