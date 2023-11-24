@@ -27,13 +27,13 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAd((prevAd) => (prevAd === 3 ? 1 : prevAd + 1));
-    }, 5000); // Troca a cada 5 segundos, você pode ajustar o intervalo conforme necessário
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   const handleArrowClick = (direction) => {
-    clearInterval(); // Limpa o intervalo ao clicar nas setas
+    clearInterval();
     if (direction === 'left') {
       setCurrentAd(currentAd === 1 ? 3 : currentAd - 1);
     } else {
@@ -42,7 +42,7 @@ function App() {
   };
 
   const handleIndicatorClick = (indicator) => {
-    clearInterval(); // Limpa o intervalo ao clicar nas bolinhas
+    clearInterval();
     setCurrentAd(indicator);
   };
 
@@ -90,85 +90,66 @@ function App() {
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
 
-            <div className="card">
-
-            </div>
+            <div className="card"></div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {harry}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>Harry Potter e a Pedra Filosofal</h4>
-
-              <h2>R$ 39,90</h2>
+                <div className="imagem">
+                  <img src={harry} alt="Harry Potter e a Pedra Filosofal" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>Harry Potter e a Pedra Filosofal</h4>
+                <h2>R$ 39,90</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {anos}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>Cem Anos de Solidão</h4>
-
-              <h2>R$ 45,99</h2>
+                <div className="imagem">
+                  <img src={anos} alt="Cem Anos de Solidão" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>Cem Anos de Solidão</h4>
+                <h2>R$ 45,99</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {capital}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>1984</h4>
-
-              <h2>R$ 32,50</h2>
+                <div className="imagem">
+                  <img src={capital} alt="1984" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>1984</h4>
+                <h2>R$ 32,50</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {gatsby}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>O Grande Gatsby</h4>
-
-              <h2>R$ 28,75</h2>
+                <div className="imagem">
+                  <img src={gatsby} alt="O Grande Gatsby" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>O Grande Gatsby</h4>
+                <h2>R$ 28,75</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {senhor}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>O Senhor dos Anéis</h4>
-
-              <h2>R$ 55,00</h2>
+                <div className="imagem">
+                  <img src={senhor} alt="O Senhor dos Anéis" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>O Senhor dos Anéis</h4>
+                <h2>R$ 55,00</h2>
               </a>
             </div>
 
-            <div className="card">
+            <div className="card"></div>
 
-            </div>
-
-            <img className="ldir" src={ldir} alt=""/>
+            <img className="ldir" src={ldir} alt="" />
           </div>
         </div>
 
@@ -178,90 +159,68 @@ function App() {
           <div className="cards">
             <img className="lesq" src={lesq} alt="" />
 
-            <div className="card">
-
-            </div>
+            <div className="card"></div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {dom}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>NDom Quixote</h4>
-
-              <h2>R$ 34,25</h2>
+                <div className="imagem">
+                  <img src={dom} alt="Dom Quixote" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>Dom Quixote</h4>
+                <h2>R$ 34,25</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {principe}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>O Pequeno Príncipe</h4>
-
-              <h2>R$ 25,00</h2>
+                <div className="imagem">
+                  <img src={principe} alt="O Pequeno Príncipe" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>O Pequeno Príncipe</h4>
+                <h2>R$ 25,00</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {livros}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>A Menina que Roubava Livros</h4>
-
-              <h2>R$ 33,45</h2>
+                <div className="imagem">
+                  <img src={livros} alt="A Menina que Roubava Livros" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>A Menina que Roubava Livros</h4>
+                <h2>R$ 33,45</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {culpa}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>A Culpa é das Estrelas</h4>
-
-              <h2>R$ 36,10</h2>
+                <div className="imagem">
+                  <img src={culpa} alt="A Culpa é das Estrelas" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>A Culpa é das Estrelas</h4>
+                <h2>R$ 36,10</h2>
               </a>
             </div>
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem">
-                {codigo}
-              </div>
-
-              <img src={estrelas} alt=""/>
-
-              <h4>O Código Da Vinci</h4>
-
-              <h2>R$ 34,50</h2>
+                <div className="imagem">
+                  <img src={codigo} alt="O Código Da Vinci" />
+                </div>
+                <img src={estrelas} alt="" />
+                <h4>O Código Da Vinci</h4>
+                <h2>R$ 34,50</h2>
               </a>
             </div>
 
-            <div className="card">
+            <div className="card"></div>
 
-            </div>
-
-            <img className="ldir" src={ldir} alt=""/>
+            <img className="ldir" src={ldir} alt="" />
           </div>
         </div>
-
-        
-        
       </div>
 
       <Rodape/>
