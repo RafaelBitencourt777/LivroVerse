@@ -1,7 +1,5 @@
-
 import { Router } from 'express';
 import { realizarLoginAdm, criarContaAdm, listar } from '../repository/admRepository.js';
-
 
 const endpoints = Router();
 
@@ -17,11 +15,10 @@ endpoints.post('/adm/login', async (req, resp) => {
 
 endpoints.get('/adm/usuarios', async (req, resp) => {
   try {
-    const usuarios = await listar().catch(error => {
-      resp.status(500).send({ erro: 'Ocorreu um erro ao obter a lista de usuários.' + error.message });
-    });
+    const usuarios = await listar();
+
     if (usuarios.length === 0) {
-      resp.status(204).end();
+      resp.status(200).end();
     } else {
       resp.status(200).json(usuarios);
     }
