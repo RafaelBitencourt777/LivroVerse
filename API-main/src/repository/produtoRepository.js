@@ -108,7 +108,7 @@ async function produtosParaLandingPage() {
 export default {
   alterarImagem,
   cadastrarProduto,
-  pesquisarProdutos,
+  pesquisarlivros,
   alterarProdutoPorID,
   consultarProdutoPorID,
   removerProdutoPorID,
