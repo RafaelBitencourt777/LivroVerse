@@ -10,7 +10,7 @@ export default function ListarUsuarios() {
   useEffect(() => {
     const buscarUsuarios = async () => {
       try {
-        const response = await axios.get('http://129.148.42.252:5018/adm/usuarios');
+        const response = await axios.get('https://129.148.42.252:5018/adm/usuarios');
         setUsuarios(response.data);
       } catch (error) {
         console.error('Erro ao buscar usuários:', error.message);
