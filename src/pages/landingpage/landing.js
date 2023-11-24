@@ -10,6 +10,16 @@ import ldir from '../../assets/img/ldir.png';
 import ad1 from '../../assets/img/1banneroferta.png';
 import ad2 from '../../assets/img/2banneroferta.png';
 import ad3 from '../../assets/img/3banneroferta.png';
+import harry from '../../assets/img/harry.jpg';
+import gatsby from '../../assets/img/gatsby.jpg';
+import culpa from '../../assets/img/culpa.jpg';
+import dom from '../../assets/img/domquixote.jpg';
+import livros from '../../assets/img/livros.png';
+import senhor from '../../assets/img/senhor.jpg';
+import principe from '../../assets/img/principe.jpg';
+import codigo from '../../assets/img/codigo.jpg';
+import anos from '../../assets/img/100anos.jpg';
+import capital from '../../assets/img/1984.jpg';
 
 function App() {
   const [currentAd, setCurrentAd] = useState(1);
@@ -86,7 +96,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {harry}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -98,7 +110,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {anos}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -110,7 +124,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {capital}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -122,7 +138,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {gatsby}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -134,7 +152,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {senhor}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -164,7 +184,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {dom}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -176,7 +198,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {principe}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -188,7 +212,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {livros}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -200,7 +226,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {culpa}
+              </div>
 
               <img src={estrelas} alt=""/>
 
@@ -212,7 +240,9 @@ function App() {
 
             <div className="card">
               <a href='/previsualizaçao'>
-              <div className="imagem"></div>
+              <div className="imagem">
+                {codigo}
+              </div>
 
               <img src={estrelas} alt=""/>
 
